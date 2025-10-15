@@ -1,0 +1,200 @@
+{
+  "base": {
+    "name": "Neill Holloman",
+    "title": "Customer Service & Technology Professional",
+    "address": "Customer Service & Technology Professional",
+    "email": "Customer Service & Technology Professional",
+    "summary": "Disciplined and analytical professional with experience in customer service, safety, and technology. Known for initiative, process improvement, and strong communication across retail, logistics, and IT environments."
+  },
+  "resumes": {
+    "customerService": {
+      "title": "Customer Service Specialist",
+      "summary": "Empathetic and adaptable professional with over a decade in retail and service roles. Skilled at handling customer concerns, boosting satisfaction, and supporting team success through clear communication and problem-solving.",
+      "experience": [
+        {
+          "company": "Amazon",
+          "position": "Delivery Station Associate",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "August 2024 - Present",
+          "highlights": [
+            "Demonstrated service excellence by supporting associates and ensuring smooth package processing.",
+            "Reorganized Hazmat cage by categorizing materials and researching EPA classifications to improve safety.",
+            "Trained associates in Hazmat procedures and contributed to a positive, team-oriented culture.",
+            "Advocated for safety and efficiency as a Safety Champion and committee member."
+          ]
+        },
+        {
+          "company": "Lowe's Companies, Inc.",
+          "position": "Cashier",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "January 2022 - September 2022",
+          "highlights": [
+            "Provided high-quality customer interactions in a fast-paced retail environment.",
+            "Ranked #2 in the Pacific Region for customer service surveys.",
+            "Sold multiple credit cards through rapport and trust-building, demonstrating strong persuasion skills.",
+            "Troubleshot self-checkout systems while ensuring customer satisfaction."
+          ]
+        },
+        {
+          "company": "Advantage Solutions",
+          "position": "Sales Advisor",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "April 2024 - August 2024",
+          "highlights": [
+            "Delivered engaging product demonstrations at Costco, exceeding sales goals.",
+            "Educated customers on product benefits and created memorable brand experiences.",
+            "Maintained compliance with food safety and sanitation standards."
+          ]
+        },
+        {
+          "company": "Starbucks",
+          "position": "Barista",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "December 2021 - July 2022",
+          "highlights": [
+            "Balanced quality and efficiency during high-volume service periods.",
+            "Delivered friendly, attentive customer service to foster repeat visits.",
+            "Worked collaboratively to maintain consistent operations and standards."
+          ]
+        },
+        {
+          "company": "Down to Earth All Vegetarian Organic & Natural",
+          "position": "Grocery Clerk",
+          "location": "Kapolei, Hawaii",
+          "dateRange": "November 2012 - July 2013",
+          "highlights": [
+            "Demonstrated customer-first attitude while managing multiple product areas.",
+            "Achieved 99% satisfaction rating from Secret Shopper evaluations.",
+            "Maintained stock accuracy and store presentation to enhance customer experience."
+          ]
+        }
+      ]
+    },
+    "itSupport": {
+      "title": "IT Support Specialist",
+      "summary": "Analytical professional with experience in ServiceNow, system maintenance, and retail data management. Proven ability to troubleshoot hardware and software issues, implement solutions, and streamline workflows.",
+      "experience": [
+        {
+          "company": "Amazon",
+          "position": "Delivery Station Associate",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "August 2024 - Present",
+          "highlights": [
+            "Applied technical troubleshooting in conveyor operations and data tracking systems.",
+            "Developed process improvements that enhanced workflow visibility and compliance.",
+            "Trained peers on Hazmat documentation and classification systems."
+          ]
+        },
+        {
+          "company": "Food Pantry, Ltd.",
+          "position": "Scan Coordinator",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "October 2022 - September 2023",
+          "highlights": [
+            "Resolved ESL malfunctions through collaboration with corporate IT.",
+            "Audited 1,000–2,000 pricing labels monthly to maintain data accuracy.",
+            "Managed ordering systems and data synchronization between store and corporate."
+          ]
+        },
+        {
+          "company": "Whole Foods Market",
+          "position": "Store Scanning Specialist",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "May 2018 - January 2021",
+          "highlights": [
+            "Used ServiceNow for ticketing and issue resolution at enterprise scale.",
+            "Troubleshot hardware including printers, scales, and POS terminals.",
+            "Analyzed product data to reduce waste and improve inventory accuracy.",
+            "Trained staff on system operations to ensure continuity of support."
+          ]
+        }
+      ]
+    },
+    "frontendDeveloper": {
+      "title": "Frontend Developer",
+      "summary": "Self-taught developer with hands-on experience in creating web and desktop applications. Skilled in JavaScript, Vue, and React, with a focus on user experience and efficient data processing.",
+      "experience": [
+        {
+          "company": "Amazon",
+          "position": "Delivery Station Associate",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "August 2024 - Present",
+          "highlights": [
+            "Applied technical logic to improve workflow processes similar to frontend data flow optimization.",
+            "Collaborated with associates through digital tools like Slack to resolve operational bottlenecks.",
+            "Created reports and feedback documentation reflecting data-structured thinking."
+          ]
+        },
+        {
+          "company": "Personal Project",
+          "position": "Frontend Developer",
+          "location": "Remote",
+          "dateRange": "2023 - Present",
+          "highlights": [
+            "Built Shopify Desktop Admin app using Electron, Vue 3, and GraphQL for product data management.",
+            "Developed UPT Calculator PWA using React, Tailwind, and IndexedDB for time tracking.",
+            "Implemented Material Design and responsive UI components with performance optimization.",
+            "Integrated SQLite3 and Dexie for offline data storage and persistence."
+          ]
+        },
+        {
+          "company": "Whole Foods Market",
+          "position": "Store Scanning Specialist",
+          "location": "Honolulu, Hawaii",
+          "dateRange": "May 2018 - January 2021",
+          "highlights": [
+            "Worked with data-driven systems requiring logic comparable to frontend workflows.",
+            "Created technical solutions and trained others in digital tools and procedures."
+          ]
+        }
+      ]
+    }
+  },
+  "skills": [
+    {
+      "category": "Customer Service",
+      "items": ["Customer Engagement", "Sales Techniques", "Conflict Resolution", "POS Systems"]
+    },
+    {
+      "category": "IT Support",
+      "items": ["ServiceNow", "Hardware Troubleshooting", "ESL Systems", "Data Auditing", "Process Optimization"]
+    },
+    {
+      "category": "Frontend Development",
+      "items": ["JavaScript", "Vue 3", "React", "Electron", "Tailwind CSS", "SQLite3", "IndexedDB", "GraphQL"]
+    },
+    {
+      "category": "General",
+      "items": ["Leadership", "Training", "Safety Compliance", "Problem Solving"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Shopify Desktop Admin",
+      "description": "Electron-based desktop app that fetches and processes Shopify bulk product and variant data.",
+      "technologies": ["Electron", "Vue 3", "Pinia", "GraphQL", "SQLite3"],
+      "highlights": [
+        "Automates bulk product updates and variant management.",
+        "Integrates local database for offline-first performance."
+      ]
+    },
+    {
+      "name": "UPT Calculator PWA",
+      "description": "Progressive web app designed to help Amazon associates track UPT balances and schedule impacts.",
+      "technologies": ["React", "Vite", "Tailwind", "IndexedDB"],
+      "highlights": [
+        "Implements mobile-first design with offline data storage.",
+        "Calculates UPT accrual and usage based on work schedules."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Azalea Garden Christian School",
+      "degree": "High School Diploma",
+      "field": "General Education",
+      "dateRange": "1995 - 1996",
+      "highlights": []
+    }
+  ]
+}
