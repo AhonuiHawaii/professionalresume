@@ -2,7 +2,7 @@
   "base": {
     "name": "Neill Holloman",
     "title": "Coder & Entrepreneur at Amazon",
-    "summary": "Disciplined and analytical professional with experience in customer service, safety, and technology."
+    "summary": "Disciplined and analytical professional with experience in customer service, safety, and technology. Dedicated to delivering efficient, high-quality results while ensuring customer satisfaction and workplace excellence."
   },
   "resumes": {
     "customerService": {
@@ -12,12 +12,14 @@
           "role": "Delivery Station Associate",
           "dates": "August 2024 – Present",
           "location": "Honolulu, HI",
+          "summary": "Provide dependable and accurate customer-focused support by ensuring safe, efficient package handling and clear workflow communication.",
           "responsibilities": [
-            "Induct and process packages on ADTA conveyor systems according to established procedures.",
-            "Handle hazardous and non-hazardous packages in compliance with EPA and company safety standards.",
-            "Identify and report damaged or problem packages to maintain accuracy and workflow.",
-            "Conduct safety walks using WHS checklists to identify potential hazards.",
-            "Submit feedback through Voice of Associate (VOA) to improve safety and process efficiency."
+            "Process and induct packages on ADTA conveyor systems, maintaining speed and accuracy for on-time customer deliveries.",
+            "Handle hazardous and non-hazardous packages in compliance with EPA and safety standards.",
+            "Identify, report, and resolve damaged or problem packages to prevent delivery delays.",
+            "Conduct safety walks using WHS checklists and report hazards to leadership for resolution.",
+            "Submit feedback through Voice of Associate (VOA) to improve safety procedures and station productivity.",
+            "Serve as Safety Committee member to promote best practices and ensure compliance with Amazon policy."
           ]
         },
         {
@@ -25,10 +27,12 @@
           "role": "Backroom Associate",
           "dates": "2024",
           "location": "Honolulu, HI",
+          "summary": "Supported merchandise flow and customer readiness through efficient organization, tagging, and replenishment of stockroom inventory.",
           "responsibilities": [
-            "Unloaded freight and sorted merchandise for tagging and stocking.",
-            "Organized stockroom inventory and supported sales floor replenishment.",
-            "Followed store loss prevention procedures during inventory handling."
+            "Unloaded freight and sorted merchandise for processing and floor display preparation.",
+            "Applied security tags to high-value merchandise to minimize shrinkage.",
+            "Organized stockroom areas for safety and accessibility to support store efficiency.",
+            "Assisted floor teams by replenishing inventory and ensuring proper presentation of products."
           ]
         },
         {
@@ -36,10 +40,12 @@
           "role": "Sales Advisor",
           "dates": "April 2024 – August 2024",
           "location": "Honolulu, HI",
+          "summary": "Delivered engaging product demonstrations and customer experiences that strengthened brand awareness and boosted sales.",
           "responsibilities": [
-            "Conducted product demonstrations and engaged with customers to promote sales.",
-            "Maintained sampling area cleanliness and complied with health regulations.",
-            "Tracked product performance and reported feedback to supervisors."
+            "Conducted live demonstrations for Costco shoppers, engaging customers and promoting featured products.",
+            "Provided accurate and persuasive product information to support purchasing decisions.",
+            "Maintained compliance with sanitation and health regulations at all times.",
+            "Tracked daily sales performance and customer engagement for reporting to supervisors."
           ]
         },
         {
@@ -47,11 +53,12 @@
           "role": "Night Stock Clerk",
           "dates": "2021 – 2022",
           "location": "Honolulu, HI",
+          "summary": "Maintained organized and fully stocked aisles to ensure smooth warehouse operations and next-day customer readiness.",
           "responsibilities": [
-            "Received and restocked inventory following rotation and safety standards.",
-            "Operated pallet jacks safely to move freight and organize warehouse areas.",
-            "Prepared aisles and shelves for morning operations and customer readiness.",
-            "Followed store procedures for labeling, storage, and organization."
+            "Received and restocked inventory using safe material handling practices.",
+            "Operated pallet jacks to transport freight safely and efficiently.",
+            "Labeled and rotated stock according to company policy and safety standards.",
+            "Prepared aisles and storage areas for seamless morning operations."
           ]
         },
         {
@@ -59,10 +66,12 @@
           "role": "Customer Service Associate",
           "dates": "2021",
           "location": "Honolulu, HI",
+          "summary": "Delivered fast, friendly, and accurate customer service while maintaining checkout and store organization standards.",
           "responsibilities": [
-            "Processed transactions and assisted customers at checkout.",
-            "Restocked front-end merchandise and kept displays organized.",
-            "Directed customers to product locations and answered basic questions."
+            "Processed customer transactions quickly and accurately at checkout.",
+            "Assisted customers with product locations and general inquiries.",
+            "Restocked shelves and maintained neat, accessible product displays.",
+            "Handled exchanges and returns in a professional and courteous manner."
           ]
         },
         {
@@ -70,10 +79,11 @@
           "role": "Customer Service Associate",
           "dates": "2021",
           "location": "Honolulu, HI",
+          "summary": "Provided exceptional service and product quality to every guest, ensuring a welcoming and efficient environment.",
           "responsibilities": [
-            "Handled cashier duties and prepared food orders in the oven station.",
-            "Maintained cleanliness and restocked supplies throughout shifts.",
-            "Provided fast, friendly customer service during peak hours."
+            "Handled cashier duties and prepared food orders for customers during high-volume hours.",
+            "Maintained a clean, organized workspace to ensure smooth operations.",
+            "Restocked supplies and coordinated with team members to meet customer demand."
           ]
         },
         {
@@ -81,12 +91,13 @@
           "role": "Store Scanning Specialist",
           "dates": "2018 – 2021",
           "location": "Honolulu, HI",
+          "summary": "Supported store operations by ensuring accurate pricing, compliance, and reliable communication across departments.",
           "responsibilities": [
-            "Checked and updated storewide pricing for accuracy and compliance.",
-            "Worked with corporate and regional pricing teams to correct errors.",
-            "Performed required scale inspections and maintained compliance records.",
-            "Reported maintenance issues using ServiceNow ticketing system.",
-            "Assisted departments in maintaining accurate price tags and signage."
+            "Updated and verified pricing accuracy for thousands of products storewide.",
+            "Coordinated with corporate and regional pricing teams to resolve discrepancies.",
+            "Performed scale inspections and ensured compliance documentation met regulatory standards.",
+            "Reported maintenance and system issues using ServiceNow for timely resolution.",
+            "Assisted team members with audits and trained new employees on labeling systems."
           ]
         },
         {
@@ -94,11 +105,12 @@
           "role": "Customer Service Associate",
           "dates": "2017 – 2018",
           "location": "Honolulu, HI",
+          "summary": "Built trust with customers by providing product assistance, accurate transactions, and dependable front-end support.",
           "responsibilities": [
             "Assisted customers in locating products, handling returns, and completing purchases.",
-            "Processed transactions accurately using POS systems.",
-            "Supported restocking and maintained department displays.",
-            "Provided coverage during peak hours to keep service areas running smoothly."
+            "Ranked #2 regionally for customer satisfaction through consistent survey performance.",
+            "Processed sales transactions accurately through POS systems during busy hours.",
+            "Provided department coverage and assisted with merchandise restocking."
           ]
         },
         {
@@ -106,11 +118,12 @@
           "role": "Grocery Clerk",
           "dates": "2015 – 2018",
           "location": "Honolulu, HI",
+          "summary": "Maintained product quality, display standards, and responsive customer service in a high-traffic grocery environment.",
           "responsibilities": [
-            "Stocked shelves, rotated products, and ensured displays met company standards.",
-            "Provided customer assistance in locating products and answering questions.",
-            "Checked product dates and maintained food safety compliance.",
-            "Worked efficiently with team members to complete daily restocking tasks."
+            "Stocked and rotated products to maintain freshness and visibility.",
+            "Assisted customers with product questions and recommendations.",
+            "Maintained compliance with food safety and sanitation procedures.",
+            "Collaborated across departments to meet daily stocking goals."
           ]
         },
         {
@@ -118,10 +131,11 @@
           "role": "Crew Member",
           "dates": "2014 – 2015",
           "location": "Honolulu, HI",
+          "summary": "Worked in a fast-paced environment to prepare quality food, maintain cleanliness, and ensure customer satisfaction.",
           "responsibilities": [
-            "Prepared food items according to safety and sanitation standards.",
-            "Maintained cleanliness in kitchen and service areas.",
-            "Worked with team members to meet service time goals during busy hours."
+            "Prepared menu items following company quality and safety standards.",
+            "Maintained a clean kitchen and dining area to uphold brand standards.",
+            "Supported team members during peak service periods for on-time fulfillment."
           ]
         },
         {
@@ -129,10 +143,11 @@
           "role": "Seasonal Cart Associate",
           "dates": "2013",
           "location": "Honolulu, HI",
+          "summary": "Ensured a safe and welcoming customer environment through organized cart retrieval and entryway maintenance.",
           "responsibilities": [
-            "Collected and organized shopping carts for customer use.",
-            "Assisted with lot organization and maintained store entry safety.",
-            "Provided assistance to customers as needed in parking and entry areas."
+            "Collected and organized shopping carts to maintain store accessibility.",
+            "Assisted customers with loading purchases when needed.",
+            "Kept entry and parking areas clean and free from obstruction."
           ]
         },
         {
@@ -140,36 +155,46 @@
           "role": "Seasonal Maintenance Worker",
           "dates": "2005",
           "location": "Honolulu, HI",
+          "summary": "Maintained store cleanliness and supported daily operations to enhance the customer shopping experience.",
           "responsibilities": [
-            "Cleaned restrooms, swept floors, and maintained store cleanliness standards.",
-            "Assisted with basic maintenance and janitorial tasks.",
-            "Worked independently to ensure assigned zones were completed daily."
+            "Cleaned restrooms, floors, and public areas to ensure sanitary conditions.",
+            "Disposed of trash and maintained a safe, orderly environment.",
+            "Worked independently and efficiently to complete assigned tasks daily."
           ]
         }
       ]
     }
   },
   "skills": [
-    "Customer Service",
-    "Teamwork",
-    "Safety Awareness",
-    "Time Management",
-    "Organization",
-    "Dependability",
-    "Attention to Detail",
-    "Process Accuracy"
+    { "name": "Customer Service", "level": "Expert", "value": 5 },
+    { "name": "Teamwork", "level": "Expert", "value": 5 },
+    { "name": "Safety Awareness", "level": "Advanced", "value": 4 },
+    { "name": "Time Management", "level": "Advanced", "value": 4 },
+    { "name": "Organization", "level": "Advanced", "value": 4 },
+    { "name": "Dependability", "level": "Expert", "value": 5 },
+    { "name": "Attention to Detail", "level": "Advanced", "value": 4 },
+    { "name": "Process Accuracy", "level": "Advanced", "value": 4 },
+    { "name": "Communication", "level": "Expert", "value": 5 },
+    { "name": "Conflict Resolution", "level": "Advanced", "value": 4 },
+    { "name": "Adaptability", "level": "Advanced", "value": 4 },
+    { "name": "Problem Solving", "level": "Advanced", "value": 4 },
+    { "name": "Training Support", "level": "Intermediate", "value": 3 }
   ],
   "projects": [
     {
-      "title": "Shopify Desktop Admin", 
-      "description": "Created a desktop application for managing Shopify product data efficiently."
+      "title": "Shopify Desktop Admin",
+      "description": "Created a cross-platform desktop application using Electron and Vue.js to manage Shopify product data. Automated bulk uploads and streamlined variant updates, improving efficiency for e-commerce workflows."
+    },
+    {
+      "title": "UPT Calculator App",
+      "description": "Developed a responsive progressive web app using React and Tailwind CSS to help Amazon associates track UPT accrual, usage, and scheduling. Implemented IndexedDB for offline use and data persistence."
     }
   ],
   "education": [
     {
       "school": "Community College of Hawaii",
       "program": "Information Technology Coursework",
-      "notes": "Completed coursework in computer systems, troubleshooting, and data organization."
+      "notes": "Completed coursework in computer systems, troubleshooting, and data organization with a focus on applying technology to real-world workplace processes."
     }
   ]
 }
