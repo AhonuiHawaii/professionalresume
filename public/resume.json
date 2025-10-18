@@ -1,8 +1,16 @@
 {
   "base": {
     "name": "Neill Holloman",
-    "title": "Coder & Entrepreneur at Amazon",
-    "summary": "Disciplined and analytical professional with experience in customer service, safety, and technology. Dedicated to delivering efficient, high-quality results while ensuring customer satisfaction and workplace excellence."
+    "title": "Customer Service Professional",
+    "address": "Honolulu, HI 96817",
+    "email": "neill@holloman.life",
+    "photo": "profileImage.jpg",
+    "summary": "Disciplined and analytical professional with over 15 years of experience in retail, grocery, logistics, and e-commerce. Known for delivering dependable, high-quality service and maintaining strong attention to detail in fast-paced environments. Recognized for taking initiative to identify problems, improve workflows, and support both customers and coworkers with empathy and reliability. Experienced in handling complex operational tasks while maintaining accuracy, safety, and efficiency. Guided by a simple principle: satisfy and delight. I take pride in creating positive experiences, solving challenges, and upholding standards that reflect integrity and care in every role.",
+    "social": {
+      "linkedin": "https://www.linkedin.com/in/neill-holloman/",
+      "github": "",
+      "portfolio": "https://holloman.life"
+    }
   },
   "resumes": {
     "customerService": {
@@ -10,156 +18,219 @@
         {
           "company": "Amazon Delivery Station (DHI2)",
           "role": "Delivery Station Associate",
-          "dates": "August 2024 – Present",
+          "startDate": "August 2024",
+          "endDate": "Present",
           "location": "Honolulu, HI",
-          "summary": "Provide dependable and accurate customer-focused support by ensuring safe, efficient package handling and clear workflow communication.",
+          "summary": "Provide reliable and detail-oriented support in Amazon’s fast-paced logistics environment. Recognized for improving safety processes, optimizing hazardous material handling, and promoting compliance across workflows. Consistently ensure accuracy in package induction and delivery readiness through proactive communication and teamwork.",
           "responsibilities": [
-            "Process and induct packages on ADTA conveyor systems, maintaining speed and accuracy for on-time customer deliveries.",
-            "Handle hazardous and non-hazardous packages in compliance with EPA and safety standards.",
-            "Identify, report, and resolve damaged or problem packages to prevent delivery delays.",
-            "Conduct safety walks using WHS checklists and report hazards to leadership for resolution.",
-            "Submit feedback through Voice of Associate (VOA) to improve safety procedures and station productivity.",
-            "Serve as Safety Committee member to promote best practices and ensure compliance with Amazon policy."
+            "Operate ADTA Conveyor systems including Induct, Unload, Pusher, Diverter, Straightener, and Stow functions to maintain throughput efficiency.",
+            "Reorganized the Hazmat cage by categorizing materials such as Corrosive, Flammable, Environmental Hazard, Food-Grade Waste, and E-Waste to streamline operations.",
+            "Conducted research on EPA classifications to improve identification and handling of hazardous materials.",
+            "Trained an associate in Hazmat procedures, ensuring knowledge transfer and operational consistency.",
+            "Performed deep dives into problem packages to ensure proper processing and prevent customer delays.",
+            "Served as Safety Champion and active member of the Associate Safety Committee to promote safety culture and compliance.",
+            "Conducted regular WHS safety walks and submitted hazard observations through Dragonfly and VOA platforms."
           ]
         },
         {
           "company": "TJ Maxx & HomeGoods",
           "role": "Backroom Associate",
-          "dates": "2024",
+          "startDate": "April 2024",
+          "endDate": "August 2024",
           "location": "Honolulu, HI",
-          "summary": "Supported merchandise flow and customer readiness through efficient organization, tagging, and replenishment of stockroom inventory.",
+          "summary": "Supported retail operations by efficiently organizing, tagging, and replenishing inventory to ensure timely merchandise flow. Maintained compliance with safety and loss prevention standards while contributing to a clean, well-structured stockroom.",
           "responsibilities": [
-            "Unloaded freight and sorted merchandise for processing and floor display preparation.",
-            "Applied security tags to high-value merchandise to minimize shrinkage.",
-            "Organized stockroom areas for safety and accessibility to support store efficiency.",
-            "Assisted floor teams by replenishing inventory and ensuring proper presentation of products."
+            "Unloaded inbound freight and sorted merchandise for efficient processing and placement.",
+            "Applied security tags to high-theft merchandise, supporting store-wide loss prevention.",
+            "Organized stockroom areas to maintain accessibility and compliance with safety standards.",
+            "Prepared work-in-progress carts to expedite merchandise flow to the sales floor.",
+            "Assisted sales teams by replenishing floor inventory and maintaining presentation quality.",
+            "Maintained a clean and organized backroom to reduce risk and improve productivity."
           ]
         },
         {
           "company": "Advantage Solutions (Costco Demo)",
           "role": "Sales Advisor",
-          "dates": "April 2024 – August 2024",
+          "startDate": "April 2024",
+          "endDate": "August 2024",
           "location": "Honolulu, HI",
-          "summary": "Delivered engaging product demonstrations and customer experiences that strengthened brand awareness and boosted sales.",
+          "summary": "Delivered engaging demonstrations that drove customer interest and sales growth for multiple brands at Costco. Known for strong communication skills, product expertise, and maintaining compliance with company and health standards.",
           "responsibilities": [
-            "Conducted live demonstrations for Costco shoppers, engaging customers and promoting featured products.",
-            "Provided accurate and persuasive product information to support purchasing decisions.",
-            "Maintained compliance with sanitation and health regulations at all times.",
-            "Tracked daily sales performance and customer engagement for reporting to supervisors."
+            "Conducted product demonstrations that consistently achieved daily sales targets.",
+            "Delivered engaging customer experiences through professional communication and brand representation.",
+            "Educated customers on product features, benefits, and promotions to support purchasing decisions.",
+            "Adapted quickly to different product categories and maintained full compliance with health regulations.",
+            "Ensured demo stations remained clean, stocked, and in accordance with Costco operational policies."
+          ]
+        },
+        {
+          "company": "Food Pantry, Ltd.",
+          "role": "Scan Coordinator",
+          "startDate": "October 2022",
+          "endDate": "September 2023",
+          "location": "Honolulu, HI",
+          "summary": "Maintained pricing accuracy and inventory integrity across store operations. Collaborated with corporate and IT teams to resolve scanning issues, reduce pricing errors, and ensure compliance with company standards.",
+          "responsibilities": [
+            "Troubleshot and resolved Electronic Sales Label (ESL) issues by coordinating with corporate technical teams.",
+            "Audited 1,000–2,000 pricing scans monthly to ensure compliance and accuracy.",
+            "Managed grocery ordering during manager absences to maintain proper stock levels.",
+            "Implemented markdown and pricing strategies to improve sales and reduce waste.",
+            "Identified product discrepancies and corrected pricing errors to protect revenue integrity."
+          ]
+        },
+        {
+          "company": "Lowe’s Home Improvement",
+          "role": "Cashier",
+          "startDate": "January 2022",
+          "endDate": "September 2022",
+          "location": "Honolulu, HI",
+          "summary": "Consistently ranked among top performers in customer satisfaction and sales. Excelled in handling transactions efficiently while building trust and rapport with diverse customers in a high-volume environment.",
+          "responsibilities": [
+            "Achieved #2 ranking in the Pacific Region for customer satisfaction through exceptional service delivery.",
+            "Sold 3–4 credit cards monthly through strong communication and persuasive selling skills.",
+            "Operated both self-checkout and traditional registers while resolving technical and transaction issues.",
+            "Handled returns, exchanges, and payments with precision and professionalism.",
+            "Maintained a welcoming and efficient checkout environment that improved customer flow."
+          ]
+        },
+        {
+          "company": "Starbucks",
+          "role": "Barista",
+          "startDate": "December 2021",
+          "endDate": "July 2022",
+          "location": "Honolulu, HI",
+          "summary": "Delivered high-quality beverages and friendly service while supporting smooth daily operations. Recognized for teamwork, accuracy under pressure, and maintaining cleanliness and consistency throughout shifts.",
+          "responsibilities": [
+            "Prepared and served beverages and food according to company standards.",
+            "Handled cash register operations, balancing transactions with accuracy and speed.",
+            "Ensured compliance with food safety and sanitation protocols at all times.",
+            "Supported teammates during peak hours to maintain customer satisfaction.",
+            "Restocked supplies and maintained a clean, efficient workstation."
           ]
         },
         {
           "company": "Y. Hata & Co., Ltd. / ChefZone",
           "role": "Night Stock Clerk",
-          "dates": "2021 – 2022",
+          "startDate": "May 2021",
+          "endDate": "August 2021",
           "location": "Honolulu, HI",
-          "summary": "Maintained organized and fully stocked aisles to ensure smooth warehouse operations and next-day customer readiness.",
+          "summary": "Supported warehouse operations by safely handling and restocking inventory. Maintained strong attention to accuracy, organization, and compliance with safety procedures during overnight shifts.",
           "responsibilities": [
-            "Received and restocked inventory using safe material handling practices.",
-            "Operated pallet jacks to transport freight safely and efficiently.",
-            "Labeled and rotated stock according to company policy and safety standards.",
-            "Prepared aisles and storage areas for seamless morning operations."
+            "Received and checked inventory for accuracy and damage.",
+            "Operated electric pallet jacks and reach forklifts to transport goods safely.",
+            "Assisted with verifying inbound shipments using handheld scanners.",
+            "Maintained clean and organized aisles to ensure readiness for morning operations.",
+            "Adhered to warehouse safety procedures and equipment handling standards."
           ]
         },
         {
           "company": "Longs Drugs",
           "role": "Customer Service Associate",
-          "dates": "2021",
+          "startDate": "March 2021",
+          "endDate": "May 2021",
           "location": "Honolulu, HI",
-          "summary": "Delivered fast, friendly, and accurate customer service while maintaining checkout and store organization standards.",
+          "summary": "Provided efficient checkout service and assisted customers with product inquiries. Demonstrated professionalism, reliability, and strong attention to detail in all store operations.",
           "responsibilities": [
-            "Processed customer transactions quickly and accurately at checkout.",
-            "Assisted customers with product locations and general inquiries.",
-            "Restocked shelves and maintained neat, accessible product displays.",
-            "Handled exchanges and returns in a professional and courteous manner."
-          ]
-        },
-        {
-          "company": "Starbucks",
-          "role": "Customer Service Associate",
-          "dates": "2021",
-          "location": "Honolulu, HI",
-          "summary": "Provided exceptional service and product quality to every guest, ensuring a welcoming and efficient environment.",
-          "responsibilities": [
-            "Handled cashier duties and prepared food orders for customers during high-volume hours.",
-            "Maintained a clean, organized workspace to ensure smooth operations.",
-            "Restocked supplies and coordinated with team members to meet customer demand."
+            "Handled customer transactions quickly and accurately at the register.",
+            "Restocked grocery and household sections to maintain availability.",
+            "Resolved product-related inquiries and guided customers to appropriate departments.",
+            "Maintained clean and organized aisles to support customer experience."
           ]
         },
         {
           "company": "Whole Foods Market",
           "role": "Store Scanning Specialist",
-          "dates": "2018 – 2021",
+          "startDate": "May 2018",
+          "endDate": "January 2021",
           "location": "Honolulu, HI",
-          "summary": "Supported store operations by ensuring accurate pricing, compliance, and reliable communication across departments.",
+          "summary": "Ensured store-wide pricing accuracy, compliance, and technical issue resolution. Provided reliable communication between store operations and corporate support to maintain data integrity and smooth execution.",
           "responsibilities": [
-            "Updated and verified pricing accuracy for thousands of products storewide.",
-            "Coordinated with corporate and regional pricing teams to resolve discrepancies.",
-            "Performed scale inspections and ensured compliance documentation met regulatory standards.",
-            "Reported maintenance and system issues using ServiceNow for timely resolution.",
-            "Assisted team members with audits and trained new employees on labeling systems."
-          ]
-        },
-        {
-          "company": "Lowe’s Home Improvement",
-          "role": "Customer Service Associate",
-          "dates": "2017 – 2018",
-          "location": "Honolulu, HI",
-          "summary": "Built trust with customers by providing product assistance, accurate transactions, and dependable front-end support.",
-          "responsibilities": [
-            "Assisted customers in locating products, handling returns, and completing purchases.",
-            "Ranked #2 regionally for customer satisfaction through consistent survey performance.",
-            "Processed sales transactions accurately through POS systems during busy hours.",
-            "Provided department coverage and assisted with merchandise restocking."
+            "Used ServiceNow for issue tracking and troubleshooting store equipment and systems.",
+            "Performed BIZERBA scale resets and PLU data management to maintain accuracy.",
+            "Coordinated with corporate pricing teams to resolve label discrepancies.",
+            "Audited product pricing and signage to meet compliance requirements.",
+            "Trained and supported team members in scanning and labeling processes."
           ]
         },
         {
           "company": "Whole Foods Market",
           "role": "Grocery Clerk",
-          "dates": "2015 – 2018",
+          "startDate": "March 2015",
+          "endDate": "May 2018",
           "location": "Honolulu, HI",
-          "summary": "Maintained product quality, display standards, and responsive customer service in a high-traffic grocery environment.",
+          "summary": "Maintained excellent product quality, stock rotation, and store presentation. Built positive relationships with customers through friendly, knowledgeable service in a fast-paced environment.",
           "responsibilities": [
-            "Stocked and rotated products to maintain freshness and visibility.",
-            "Assisted customers with product questions and recommendations.",
-            "Maintained compliance with food safety and sanitation procedures.",
-            "Collaborated across departments to meet daily stocking goals."
+            "Stocked and rotated products in Dairy, Frozen, and Bulk departments.",
+            "Ensured compliance with food safety and sanitation regulations.",
+            "Provided product recommendations and assisted customers with special orders.",
+            "Collaborated across departments to meet stocking and display goals."
           ]
         },
         {
           "company": "McDonald’s",
           "role": "Crew Member",
-          "dates": "2014 – 2015",
-          "location": "Honolulu, HI",
-          "summary": "Worked in a fast-paced environment to prepare quality food, maintain cleanliness, and ensure customer satisfaction.",
+          "startDate": "2014",
+          "endDate": "2015",
+          "location": "Waianae, HI",
+          "summary": "Worked collaboratively in a fast-paced kitchen to deliver consistent quality and service. Supported teammates and upheld high food safety standards.",
           "responsibilities": [
-            "Prepared menu items following company quality and safety standards.",
-            "Maintained a clean kitchen and dining area to uphold brand standards.",
-            "Supported team members during peak service periods for on-time fulfillment."
+            "Prepared menu items to company standards and served orders accurately.",
+            "Operated grill, fryer, and line stations during peak hours.",
+            "Maintained cleanliness and safety across kitchen and dining areas."
           ]
         },
         {
           "company": "Walmart",
           "role": "Seasonal Cart Associate",
-          "dates": "2013",
-          "location": "Honolulu, HI",
-          "summary": "Ensured a safe and welcoming customer environment through organized cart retrieval and entryway maintenance.",
+          "startDate": "November 2013",
+          "endDate": "December 2013",
+          "location": "Kapolei, HI",
+          "summary": "Maintained store accessibility and safety by efficiently retrieving and organizing shopping carts. Provided courteous assistance to customers as needed.",
           "responsibilities": [
-            "Collected and organized shopping carts to maintain store accessibility.",
-            "Assisted customers with loading purchases when needed.",
-            "Kept entry and parking areas clean and free from obstruction."
+            "Retrieved and organized carts using cart mules for customer availability.",
+            "Assisted customers with loading and transport of heavy items.",
+            "Kept parking and entry areas clear and safe from obstructions."
+          ]
+        },
+        {
+          "company": "Down to Earth All Vegetarian Organic & Natural",
+          "role": "Grocery Clerk",
+          "startDate": "November 2012",
+          "endDate": "July 2013",
+          "location": "Kapolei, HI",
+          "summary": "Delivered exceptional service in a natural foods retail setting. Supported wellness operations and maintained accuracy in receiving and stocking inventory.",
+          "responsibilities": [
+            "Received 6–10 pallets daily and verified invoice accuracy.",
+            "Achieved 99% customer service rating from Secret Shopper evaluations.",
+            "Assisted customers with organic and wellness product inquiries.",
+            "Operated electric pallet jacks and maintained stockroom organization."
+          ]
+        },
+        {
+          "company": "Tamura Super Market",
+          "role": "Stock Clerk",
+          "startDate": "November 2008",
+          "endDate": "September 2012",
+          "location": "Waianae, HI",
+          "summary": "Oversaw frozen and dairy sections, ensuring freshness, accuracy, and efficiency. Managed inventory and led small teams to maintain department standards.",
+          "responsibilities": [
+            "Managed milk and frozen sections with over 20 doors of product.",
+            "Received and unloaded 250+ crates weekly from Meadow Gold Dairy.",
+            "Ensured correct pricing and rotation for perishable goods.",
+            "Led 2–3 associates to maintain department efficiency."
           ]
         },
         {
           "company": "Costco Wholesale",
           "role": "Seasonal Maintenance Worker",
-          "dates": "2005",
+          "startDate": "November 2005",
+          "endDate": "December 2005",
           "location": "Honolulu, HI",
-          "summary": "Maintained store cleanliness and supported daily operations to enhance the customer shopping experience.",
+          "summary": "Upheld store cleanliness and safety through consistent sanitation, sweeping, and upkeep of customer areas during peak retail hours.",
           "responsibilities": [
-            "Cleaned restrooms, floors, and public areas to ensure sanitary conditions.",
-            "Disposed of trash and maintained a safe, orderly environment.",
-            "Worked independently and efficiently to complete assigned tasks daily."
+            "Cleaned restrooms, floors, and high-traffic areas to maintain sanitation.",
+            "Disposed of waste and maintained safe, organized public spaces.",
+            "Completed daily cleaning tasks independently and efficiently."
           ]
         }
       ]
