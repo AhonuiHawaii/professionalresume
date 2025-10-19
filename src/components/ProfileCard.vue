@@ -1,6 +1,6 @@
 <template>
   <v-card
-    class="profile-card"
+    class="background-surface w-100 profile-card"
     elevation="8"
     rounded="lg"
   >
@@ -29,6 +29,7 @@
             :social-links="profileData.socialLinks"
             :icon-size="24"
             icon-color="icon-default"
+            :show-labels="true"
             class="mt-2"
           />
         </v-col>
@@ -40,8 +41,8 @@
           class="d-flex flex-column"
         >
           <!-- Name and Title -->
-          <div class="profile-header mb-4">
-            <h1 class="text-h3 font-weight-bold mb-2">
+          <div class="text-left profile-header mb-4">
+            <h1 class="card-text-colors text-h3 font-weight-bold mb-2">
               {{ profileData.name }}
             </h1>
             <p class="text-subtitle-1 text-secondary mb-0">
@@ -50,12 +51,11 @@
           </div>
 
           <!-- Action Buttons -->
-          <div class="action-buttons mb-6">
+          <div class="d-flex flex-wrap ga-3 mb-6 action-buttons">
             <v-btn
               color="secondary"
               size="large"
               prepend-icon="mdi-download"
-              class="mr-3"
               @click="downloadCV"
             >
               Download CV
@@ -167,10 +167,10 @@ function openContact() {
 }
 </script>
 
-<style scoped lang="scss">
+<style>
+/* Custom classes needed for specific styling not available in Vuetify */
 .profile-card {
   width: 100%;
-  background-color: rgb(var(--v-theme-surface));
 }
 
 .profile-avatar {
@@ -180,60 +180,45 @@ function openContact() {
 
 .profile-header {
   text-align: left;
-
-  h1 {
-    color: rgb(var(--v-theme-text-primary));
-  }
 }
 
-.action-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-
-  .v-btn {
-    text-transform: none;
-    font-weight: 500;
-  }
+.profile-header h1 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
-.personal-info {
-  .v-list-item {
-    min-height: 36px;
-  }
+.action-buttons .v-btn {
+  text-transform: none;
+  font-weight: 500;
 }
 
-// Responsive adjustments
+.personal-info .v-list-item {
+  min-height: 36px;
+}
+
+/* Responsive adjustments */
 @media (max-width: 960px) {
-  .profile-card {
-    .v-card-text {
-      padding: 24px !important;
-    }
+  .profile-card .v-card-text {
+    padding: 24px !important;
   }
 
   .profile-header {
     text-align: center;
     margin-top: 16px;
-
-    h1 {
-      font-size: 2rem;
-    }
   }
 
-  .action-buttons {
-    justify-content: center;
+  .profile-header h1 {
+    font-size: 2rem;
   }
+
+  /* .action-buttons justify-content: center; uses justify-center Vuetify class */
 }
 
 @media (max-width: 600px) {
-  .action-buttons {
-    flex-direction: column;
-    width: 100%;
+  /* .action-buttons flex-direction: column, width: 100%; uses flex-column w-100 Vuetify classes */
 
-    .v-btn {
-      width: 100%;
-      margin-right: 0 !important;
-    }
+  .action-buttons .v-btn {
+    /* width: 100%; uses w-100 Vuetify class */
+    margin-right: 0 !important; /* Keep for override */
   }
 }
 </style>

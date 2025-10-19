@@ -1,19 +1,19 @@
 <template>
-  <section class="hero-section">
-    <div class="hero-wrapper">
+  <section class="position-relative w-100 hero-section">
+    <div class="position-relative w-100 hero-wrapper">
       <v-img
         :src="backgroundImage"
         :alt="backgroundAlt"
         cover
-        class="hero-image"
+        class="position-relative w-100 hero-image"
         :height="heroHeight"
       >
         <!-- Dark overlay for better text contrast -->
-        <div class="hero-overlay" />
+        <div class="position-absolute top-0 left-0 w-100 h-100 hero-overlay" />
       </v-img>
 
       <!-- Content slot for ProfileCard or other hero content -->
-      <v-container fluid class="hero-container">
+      <v-container fluid class="position-absolute w-100 hero-container px-4">
         <slot />
       </v-container>
     </div>
@@ -58,7 +58,7 @@ const heroHeight = computed(() => {
 })
 </script>
 
-<style scoped>
+<style>
 .hero-section {
   position: relative;
   width: 100%;

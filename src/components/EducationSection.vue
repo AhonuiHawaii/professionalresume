@@ -1,12 +1,12 @@
 <template>
   <section
     id="education"
-    class="education-section py-12"
+    class="background-surface education-section py-12"
   >
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">
-        <h2 class="text-h4 font-weight-bold mb-2">
+        <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
         </h2>
         <p v-if="sectionSubtitle" class="text-subtitle-1 text-secondary">
@@ -15,13 +15,13 @@
       </div>
 
       <!-- Education Items -->
-      <div class="education-items">
+      <div class="section-container">
         <v-card
           v-for="(edu, index) in education"
           :key="index"
           elevation="2"
           rounded="lg"
-          class="education-card mb-4"
+          class="background card-hover mb-4"
         >
           <v-card-title>
             <div class="d-flex align-center">
@@ -32,7 +32,7 @@
                 class="mr-3"
               />
               <div>
-                <h4 class="text-h6 font-weight-medium">
+                <h4 class="card-text-colors text-h6 font-weight-medium">
                   {{ edu.school }}
                 </h4>
                 <p class="text-subtitle-2 text-secondary mb-0">
@@ -44,13 +44,12 @@
 
           <v-card-text v-if="edu.dates || edu.gpa || edu.notes">
             <!-- Dates and GPA -->
-            <div v-if="edu.dates || edu.gpa" class="edu-meta mb-2">
+            <div v-if="edu.dates || edu.gpa" class="d-flex flex-wrap ga-2 mb-2">
               <v-chip
                 v-if="edu.dates"
                 size="small"
                 variant="tonal"
                 color="primary"
-                class="mr-2"
               >
                 <v-icon
                   icon="mdi-calendar"
@@ -75,12 +74,12 @@
             </div>
 
             <!-- Notes/Description -->
-            <p v-if="edu.notes" class="text-body-2 mb-0">
+            <p v-if="edu.notes" class="text-body-2 text-line-height-md mb-0">
               {{ edu.notes }}
             </p>
 
             <!-- Coursework List (if provided) -->
-            <div v-if="edu.coursework && edu.coursework.length" class="coursework mt-3">
+            <div v-if="edu.coursework && edu.coursework.length" class="d-flex flex-wrap mt-3">
               <p class="text-caption text-secondary mb-2">Relevant Coursework:</p>
               <v-chip
                 v-for="course in edu.coursework"
@@ -97,7 +96,7 @@
       </div>
 
       <!-- Empty State -->
-      <div v-if="!education || education.length === 0" class="empty-state text-center py-8">
+      <div v-if="!education || education.length === 0" class="d-flex flex-column align-center justify-center text-center py-8 empty-state">
         <v-icon
           icon="mdi-school-outline"
           size="64"
@@ -144,62 +143,30 @@ const props = defineProps({
 })
 </script>
 
-<style scoped lang="scss">
-.education-section {
-  background-color: rgb(var(--v-theme-surface));
-}
-
+<style>
+/* Custom classes for specific styling */
 .education-section :deep(.v-container) {
   max-width: 1200px;
 }
 
-.section-header {
-  h2 {
-    color: rgb(var(--v-theme-text-primary));
-  }
+.section-header h2 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
-.education-items {
-  max-width: 1200px;
-  margin: 0 auto;
+.education-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.education-card {
-  background-color: rgb(var(--v-theme-surface));
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
-
-  .v-card-title {
-    h4 {
-      color: rgb(var(--v-theme-text-primary));
-    }
-  }
-}
-
-.edu-meta {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.coursework {
-  display: flex;
-  flex-wrap: wrap;
+.education-card .v-card-title h4 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
 .empty-state {
   min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-// Responsive adjustments
+/* Responsive adjustments */
 @media (max-width: 960px) {
   .education-section {
     padding-top: 48px;

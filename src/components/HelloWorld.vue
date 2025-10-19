@@ -109,7 +109,7 @@ const profileData = computed(() => {
     socialLinks: [
       { platform: 'LinkedIn', url: resumeData.value.base?.social?.linkedin, icon: new URL('@/assets/linkedin.svg', import.meta.url).href },
       { platform: 'GitHub', url: resumeData.value.base?.social?.github, icon: new URL('@/assets/github.svg', import.meta.url).href },
-      { platform: 'Portfolio', url: resumeData.value.base?.social?.portfolio, icon: new URL('@/assets/twitter.svg', import.meta.url).href },
+      { platform: 'Portfolio', url: resumeData.value.base?.social?.portfolio, icon: new URL('@/assets/folder-open.svg', import.meta.url).href },
     ],
   }
 })
@@ -123,6 +123,7 @@ const technicalSkills = computed(() => {
   return skills.slice(0, Math.ceil(skills.length / 2)).map((skill, index) => ({
     name: skill.name,
     level: skill.value * 20, // Convert 1-5 scale to percentage (1=20%, 5=100%)
+    skillLevel: skill.level, // Pass the level text (Expert, Advanced, etc.)
     color: colors[index % colors.length],
   }))
 })
@@ -135,6 +136,7 @@ const softSkills = computed(() => {
   return skills.slice(Math.ceil(skills.length / 2)).map((skill, index) => ({
     name: skill.name,
     level: skill.value * 20, // Convert 1-5 scale to percentage (1=20%, 5=100%)
+    skillLevel: skill.level, // Pass the level text (Expert, Advanced, etc.)
     color: colors[index % colors.length],
   }))
 })

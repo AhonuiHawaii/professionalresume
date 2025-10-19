@@ -1,12 +1,12 @@
 <template>
   <section
     id="about"
-    class="about-section py-12"
+    class="background about-section py-12"
   >
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">
-        <h2 class="text-h4 font-weight-bold mb-2">
+        <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
         </h2>
         <p v-if="sectionSubtitle" class="text-subtitle-1 text-secondary">
@@ -15,12 +15,12 @@
       </div>
 
       <!-- About Content -->
-      <v-card
-        elevation="2"
-        rounded="lg"
-        class="about-card pa-8"
-      >
-        <div class="about-content">
+      <div class="section-container">
+        <v-card
+          elevation="2"
+          rounded="lg"
+          class="background-surface about-card pa-8"
+        >
           <!-- Profile Image (Optional) -->
           <div v-if="aboutData.image" class="about-image-container mb-6">
             <v-img
@@ -35,12 +35,12 @@
           <!-- About Text -->
           <div class="about-text">
             <!-- Introduction -->
-            <p v-if="aboutData.introduction" class="text-body-1 mb-4">
+            <p v-if="aboutData.introduction" class="card-text-colors text-body-1 text-line-height-lg mb-4">
               {{ aboutData.introduction }}
             </p>
 
             <!-- Summary -->
-            <p v-if="aboutData.summary" class="text-body-1 mb-4">
+            <p v-if="aboutData.summary" class="card-text-colors text-body-1 text-line-height-lg mb-4">
               {{ aboutData.summary }}
             </p>
 
@@ -48,19 +48,19 @@
             <p
               v-for="(paragraph, index) in aboutData.paragraphs"
               :key="index"
-              class="text-body-1 mb-4"
+              class="card-text-colors text-body-1 text-line-height-lg mb-4"
             >
               {{ paragraph }}
             </p>
 
             <!-- Highlights/Key Points -->
             <div v-if="aboutData.highlights && aboutData.highlights.length" class="highlights mt-6">
-              <h3 class="text-h6 font-weight-medium mb-3">Key Highlights</h3>
-              <v-list density="compact" class="highlights-list">
+              <h3 class="card-text-colors text-h6 font-weight-medium mb-3">Key Highlights</h3>
+              <v-list density="compact" class="list-compact">
                 <v-list-item
                   v-for="(highlight, index) in aboutData.highlights"
                   :key="index"
-                  class="px-0"
+                  class="px-0 py-2"
                 >
                   <template #prepend>
                     <v-icon
@@ -69,15 +69,15 @@
                       color="primary"
                     />
                   </template>
-                  <v-list-item-title class="text-body-2">
+                  <v-list-item-title class="card-text-colors text-body-2 text-line-height-md">
                     {{ highlight }}
                   </v-list-item-title>
                 </v-list-item>
               </v-list>
             </div>
           </div>
-        </div>
-      </v-card>
+        </v-card>
+      </div>
     </v-container>
   </section>
 </template>
@@ -114,28 +114,14 @@ const props = defineProps({
 })
 </script>
 
-<style scoped>
-.about-section {
-  background-color: rgb(var(--v-theme-background));
-}
-
+<style>
+/* Custom classes for specific styling */
 .about-section :deep(.v-container) {
   max-width: 1200px;
 }
 
-.section-header {
-  h2 {
-    color: rgb(var(--v-theme-text-primary));
-  }
-}
-
-.about-card {
-  background-color: rgb(var(--v-theme-surface));
-}
-
-.about-content {
-  max-width: 900px;
-  margin: 0 auto;
+.section-header h2 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
 .about-image {
@@ -143,30 +129,28 @@ const props = defineProps({
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
-.about-text {
-  p {
-    color: rgb(var(--v-theme-text-primary));
-    line-height: 1.8;
-  }
+.about-text p {
+  color: rgb(var(--v-theme-text-primary));
+  line-height: 1.8;
+}
 
-  h3 {
-    color: rgb(var(--v-theme-text-primary));
-  }
+.about-text h3 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
 .highlights-list {
   background-color: transparent;
+}
 
-  .v-list-item {
-    min-height: auto;
-    padding-top: 8px;
-    padding-bottom: 8px;
-  }
+.highlights-list .v-list-item {
+  min-height: auto;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
 
-  .v-list-item-title {
-    line-height: 1.6;
-    color: rgb(var(--v-theme-text-primary));
-  }
+.highlights-list .v-list-item-title {
+  line-height: 1.6;
+  color: rgb(var(--v-theme-text-primary));
 }
 
 /* Responsive adjustments */

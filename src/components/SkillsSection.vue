@@ -1,12 +1,12 @@
 <template>
   <section
     id="skills"
-    class="skills-section py-12"
+    class="background-surface skills-section py-12"
   >
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">
-        <h2 class="text-h4 font-weight-bold mb-2">
+        <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
         </h2>
         <p v-if="sectionSubtitle" class="text-subtitle-1 text-secondary">
@@ -15,28 +15,31 @@
       </div>
 
       <!-- Single Skills Card -->
-      <v-card
-        elevation="2"
-        rounded="lg"
-        class="skills-card pa-6"
-      >
-        <v-row>
-          <v-col
-            v-for="(skill, index) in allSkills"
-            :key="`skill-${index}`"
-            cols="12"
-            sm="6"
-            md="4"
-          >
-            <SkillProgressBar
-              :skill-name="skill.name"
-              :level="skill.level"
-              :bar-color="skill.color || getSkillColor(index)"
-              :show-percentage="showPercentages"
-            />
-          </v-col>
-        </v-row>
-      </v-card>
+      <div class="section-container">
+        <v-card
+          elevation="2"
+          rounded="lg"
+          class="background-surface h-100 skills-card pa-6"
+        >
+          <v-row>
+            <v-col
+              v-for="(skill, index) in allSkills"
+              :key="`skill-${index}`"
+              cols="12"
+              sm="6"
+              md="4"
+            >
+              <SkillProgressBar
+                :skill-name="skill.name"
+                :level="skill.level"
+                :skill-level="skill.skillLevel"
+                :bar-color="skill.color || getSkillColor(index)"
+                :show-percentage="showPercentages"
+              />
+            </v-col>
+          </v-row>
+        </v-card>
+      </div>
     </v-container>
   </section>
 </template>
@@ -91,38 +94,27 @@ function getSkillColor(index) {
 }
 </script>
 
-<style scoped lang="scss">
-.skills-section {
-  background-color: rgb(var(--v-theme-background));
-}
-
+<style>
+/* Custom classes for specific styling */
 .skills-section :deep(.v-container) {
   max-width: 1200px;
 }
 
-.section-header {
-  h2 {
-    color: rgb(var(--v-theme-text-primary));
-  }
+.section-header h2 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
 .skills-card {
   height: 100%;
-  background-color: rgb(var(--v-theme-surface));
-
-  h3 {
-    color: rgb(var(--v-theme-text-primary));
-    display: flex;
-    align-items: center;
-  }
 }
 
-.skills-list {
+.skills-card h3 {
+  color: rgb(var(--v-theme-text-primary));
   display: flex;
-  flex-direction: column;
+  align-items: center;
 }
 
-// Responsive adjustments
+/* Responsive adjustments */
 @media (max-width: 960px) {
   .skills-section {
     padding-top: 48px;
@@ -131,10 +123,10 @@ function getSkillColor(index) {
 
   .skills-card {
     margin-bottom: 24px;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .skills-card:last-child {
+    margin-bottom: 0;
   }
 }
 </style>

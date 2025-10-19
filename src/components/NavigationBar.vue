@@ -1,33 +1,33 @@
 <template>
-  <div class="navigation-bar-container">
+  <div class="position-absolute w-100 navigation-bar-container px-4 px-md-4 px-sm-2">
     <v-card
       elevation="2"
       rounded="lg"
-      class="navigation-bar"
+      class="background-surface w-100 navigation-bar"
     >
-      <div class="nav-content">
+      <div class="d-flex align-center ga-4 pa-2 px-4">
         <!-- Hamburger Menu Icon -->
         <v-btn
           icon="mdi-menu"
           variant="text"
           size="small"
           @click="drawer = !drawer"
-          class="hamburger-btn"
+          class="flex-shrink-0"
           aria-label="Toggle navigation menu"
         />
 
         <!-- Site Title -->
-        <div class="site-title">
+        <div class="flex-shrink-0 site-title">
           <span class="text-h6 font-weight-bold">{{ siteTitle }}</span>
         </div>
 
         <!-- Desktop Navigation Links -->
-        <div class="nav-links d-none d-md-flex">
+        <div class="d-none d-md-flex ga-6 ml-6 flex-grow-1 align-center nav-links">
           <a
             v-for="item in navItems"
             :key="item.id"
             :href="`#${item.id}`"
-            class="nav-link"
+            class="text-decoration-none text-body-2 font-weight-regular nav-link"
           >
             {{ item.label }}
           </a>
@@ -123,7 +123,8 @@ const props = defineProps({
 const drawer = ref(false)
 </script>
 
-<style scoped>
+<style>
+/* Custom classes needed for specific positioning/styling not available in Vuetify */
 .navigation-bar-container {
   position: absolute;
   top: 20px;
@@ -136,33 +137,12 @@ const drawer = ref(false)
 }
 
 .navigation-bar {
-  background-color: rgb(var(--v-theme-surface));
   width: 100%;
-}
-
-.nav-content {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  padding: 8px 16px;
-}
-
-.hamburger-btn {
-  flex-shrink: 0;
 }
 
 .site-title {
   color: rgb(var(--v-theme-text-primary));
   font-family: 'Roboto', sans-serif;
-  flex-shrink: 0;
-}
-
-.nav-links {
-  display: flex;
-  gap: 24px;
-  margin-left: 24px;
-  flex-grow: 1;
-  align-items: center;
 }
 
 .nav-link {
@@ -187,11 +167,6 @@ const drawer = ref(false)
 
   .site-title {
     font-size: 1rem;
-  }
-
-  .nav-content {
-    gap: 8px;
-    padding: 8px 12px;
   }
 }
 </style>

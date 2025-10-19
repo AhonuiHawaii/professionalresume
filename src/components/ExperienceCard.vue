@@ -2,11 +2,11 @@
   <v-card
     elevation="2"
     rounded="lg"
-    class="experience-card mb-4"
+    class="background card-hover mb-4"
   >
-    <v-card-title class="d-flex align-start">
+    <v-card-title class="d-flex flex-column flex-sm-row align-start">
       <div class="flex-grow-1">
-        <h4 class="text-h6 font-weight-medium mb-1">
+        <h4 class="card-text-colors text-h6 font-weight-medium mb-1">
           {{ experience.role }}
         </h4>
         <p class="text-subtitle-2 text-secondary mb-0">
@@ -22,9 +22,9 @@
         size="small"
         color="primary"
         variant="tonal"
-        class="ml-2"
+        class="ml-sm-2 mt-2 mt-sm-0"
       >
-        {{ experience.dates }}
+        {{ formattedDates }}
       </v-chip>
     </v-card-title>
 
@@ -39,18 +39,18 @@
 
     <v-card-text>
       <!-- Summary - Always Visible -->
-      <p v-if="experience.summary" class="text-body-2 mb-3">
+      <p v-if="experience.summary" class="text-body-2 text-line-height-md mb-3">
         {{ experience.summary }}
       </p>
 
       <!-- Expandable/Collapsible Responsibilities (Highlights) -->
       <v-expand-transition>
         <div v-show="isExpanded">
-          <v-list density="compact" class="responsibilities-list">
+          <v-list density="compact" class="list-compact">
             <v-list-item
               v-for="(responsibility, index) in experience.responsibilities"
               :key="index"
-              class="px-0"
+              class="px-0 py-2"
             >
               <template #prepend>
                 <v-icon
@@ -59,7 +59,7 @@
                   color="primary"
                 />
               </template>
-              <v-list-item-title class="text-body-2">
+              <v-list-item-title class="text-body-2 text-line-height-md text-wrap">
                 {{ responsibility }}
               </v-list-item-title>
             </v-list-item>
@@ -83,7 +83,7 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 /**
  * ExperienceCard Component
@@ -95,12 +95,14 @@ const props = defineProps({
   experience: {
     type: Object,
     required: true,
-    // Expected format:
+    // Expected format from resume.json:
     // {
-    //   company: 'Amazon Delivery Station',
+    //   company: 'Amazon',
     //   role: 'Delivery Station Associate',
-    //   dates: 'August 2024 – Present',
+    //   startDate: '2024-08-01',
+    //   endDate: null,
     //   location: 'Honolulu, HI',
+    //   summary: '...',
     //   responsibilities: ['...', '...']
     // }
   },
@@ -116,58 +118,70 @@ const props = defineProps({
 
 const isExpanded = ref(props.initiallyExpanded)
 
+// Format dates from JSON (startDate, endDate) to display format
+const formattedDates = computed(() => {
+  const start = props.experience.startDate
+  const end = props.experience.endDate
+
+  if (!start) return ''
+
+  const formatDate = (dateStr) => {
+    const date = new Date(dateStr)
+    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+  }
+
+  const startFormatted = formatDate(start)
+  const endFormatted = end ? formatDate(end) : 'Present'
+
+  return `${startFormatted} – ${endFormatted}`
+})
+
 function toggleExpand() {
   isExpanded.value = !isExpanded.value
 }
 </script>
 
-<style scoped lang="scss">
-.experience-card {
-  background-color: rgb(var(--v-theme-surface));
-  transition: all 0.2s ease-in-out;
+<style>
+/* Custom classes for hover effects and specific styling */
+.experience-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
 
-  &:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  }
+.experience-card .v-card-title {
+  padding-bottom: 8px;
+}
 
-  .v-card-title {
-    padding-bottom: 8px;
-
-    h4 {
-      color: rgb(var(--v-theme-text-primary));
-    }
-  }
+.experience-card .v-card-title h4 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
 .responsibilities-list {
   background-color: transparent;
   margin-top: 12px;
-
-  .v-list-item {
-    min-height: auto;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .v-list-item-title {
-    line-height: 1.5;
-    color: rgb(var(--v-theme-text-primary));
-  }
 }
 
-// Responsive adjustments
-@media (max-width: 600px) {
-  .experience-card {
-    .v-card-title {
-      flex-direction: column;
-      align-items: flex-start !important;
+.responsibilities-list .v-list-item {
+  min-height: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
 
-      .v-chip {
-        margin-left: 0 !important;
-        margin-top: 8px;
-      }
-    }
+.responsibilities-list .v-list-item-title {
+  line-height: 1.5;
+  color: rgb(var(--v-theme-text-primary));
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .experience-card .v-card-title {
+    flex-direction: column;
+    align-items: flex-start !important;
+  }
+
+  .experience-card .v-card-title .v-chip {
+    margin-left: 0 !important;
+    margin-top: 8px;
   }
 }
 </style>

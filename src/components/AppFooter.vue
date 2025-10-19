@@ -1,6 +1,6 @@
 <template>
   <v-footer
-    class="app-footer"
+    class="app-footer py-6"
     color="surface"
   >
     <v-container>
@@ -36,7 +36,7 @@
           md="4"
           class="text-center text-md-right"
         >
-          <div class="footer-links">
+          <div class="d-flex ga-4 justify-center flex-wrap footer-links">
             <a
               v-for="link in footerLinks"
               :key="link.title"
@@ -86,42 +86,36 @@ const props = defineProps({
 const currentYear = computed(() => new Date().getFullYear())
 </script>
 
-<style scoped lang="scss">
+<style>
+/* Custom classes for specific styling */
 .app-footer {
   padding: 24px 0;
   background-color: rgb(var(--v-theme-surface));
   border-top: 1px solid rgba(var(--v-theme-text-secondary), 0.12);
 }
 
-.footer-links {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-
-  @media (min-width: 960px) {
+@media (min-width: 960px) {
+  .footer-links {
     justify-content: flex-end;
   }
 }
 
 .footer-link {
   transition: color 0.2s ease-in-out;
-
-  &:hover {
-    color: rgb(var(--v-theme-primary)) !important;
-  }
 }
 
-// Responsive adjustments
-@media (max-width: 960px) {
-  .app-footer {
-    .v-col {
-      margin-bottom: 16px;
+.footer-link:hover {
+  color: rgb(var(--v-theme-primary)) !important;
+}
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-    }
+/* Responsive adjustments */
+@media (max-width: 960px) {
+  .app-footer .v-col {
+    margin-bottom: 16px;
+  }
+
+  .app-footer .v-col:last-child {
+    margin-bottom: 0;
   }
 }
 </style>

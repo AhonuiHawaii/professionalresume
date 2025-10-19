@@ -1,9 +1,9 @@
 <template>
-  <div class="skill-progress-bar">
-    <div class="skill-header">
-      <span class="skill-name text-body-2">{{ skillName }}</span>
-      <span v-if="showPercentage" class="skill-percentage text-caption text-secondary">
-        {{ level }}%
+  <div class="mb-5 skill-progress-bar">
+    <div class="d-flex justify-space-between align-center mb-2">
+      <span class="skill-name text-body-2 font-weight-medium">{{ skillName }}</span>
+      <span v-if="skillLevel" class="skill-level text-caption text-secondary font-weight-medium">
+        {{ skillLevel }}
       </span>
     </div>
     <v-progress-linear
@@ -33,6 +33,10 @@ const props = defineProps({
     required: true,
     validator: (value) => value >= 0 && value <= 100,
   },
+  skillLevel: {
+    type: String,
+    default: '',
+  },
   barColor: {
     type: String,
     default: 'skillBlue', // References theme colors: skillBlue, skillGreen, skillAmber, etc.
@@ -48,29 +52,18 @@ const props = defineProps({
 })
 </script>
 
-<style scoped lang="scss">
-.skill-progress-bar {
-  margin-bottom: 20px;
-
-  &:last-child {
-    margin-bottom: 0;
-  }
-}
-
-.skill-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 8px;
+<style>
+/* Custom classes for specific styling */
+.skill-progress-bar:last-child {
+  margin-bottom: 0;
 }
 
 .skill-name {
-  font-weight: 500;
   color: rgb(var(--v-theme-text-primary));
 }
 
-.skill-percentage {
-  font-weight: 500;
+.skill-percentage,
+.skill-level {
   color: rgb(var(--v-theme-text-secondary));
 }
 
@@ -78,12 +71,8 @@ const props = defineProps({
   border-radius: 4px;
 }
 
-// Responsive adjustments
+/* Responsive adjustments */
 @media (max-width: 600px) {
-  .skill-progress-bar {
-    margin-bottom: 16px;
-  }
-
   .skill-name {
     font-size: 0.875rem;
   }

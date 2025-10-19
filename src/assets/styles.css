@@ -1,0 +1,257 @@
+.section-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.background {
+  background-color: rgb(var(--v-theme-background));
+}
+
+.background-surface {
+  background-color: rgb(var(--v-theme-surface));
+}
+
+.skills-section :deep(.v-container),
+.experience-section :deep(.v-container),
+.education-section :deep(.v-container),
+.about-section :deep(.v-container),
+.projects-section :deep(.v-container) {
+  max-width: 1200px;
+}
+
+.section-header h2 {
+  color: rgb(var(--v-theme-text-primary));
+}
+
+.card-hover {
+  transition: all 0.2s ease-in-out;
+}
+
+.card-hover:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-text-colors {
+  color: rgb(var(--v-theme-text-primary));
+}
+
+.list-compact {
+  background-color: transparent;
+}
+
+.list-compact .v-list-item {
+  min-height: auto;
+}
+
+.list-compact .v-list-item-title {
+  color: rgb(var(--v-theme-text-primary));
+}
+
+.about-text p {
+  color: rgb(var(--v-theme-text-primary));
+}
+
+.skill-name,
+.skill-percentage {
+  color: rgb(var(--v-theme-text-primary));
+}
+
+.skill-percentage,
+.skill-level {
+  color: rgb(var(--v-theme-text-secondary));
+}
+
+.about-image,
+.profile-avatar {
+  border: 4px solid rgb(var(--v-theme-surface));
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about-image {
+  border-color: rgb(var(--v-theme-background));
+}
+
+.project-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
+}
+
+.hero-overlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.hero-section {
+  padding-bottom: 150px;
+}
+
+.hero-container {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) translateY(150px);
+  z-index: 3;
+  max-width: 1200px;
+}
+
+.navigation-bar-container {
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  max-width: 1200px;
+}
+
+.site-title {
+  color: rgb(var(--v-theme-text-primary));
+  font-family: 'Roboto', sans-serif;
+}
+
+.nav-link {
+  color: rgb(var(--v-theme-text-primary));
+  letter-spacing: 0.025em;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-link:hover {
+  color: rgb(var(--v-theme-primary));
+}
+
+.skill-progress-bar:last-child {
+  margin-bottom: 0;
+}
+
+.skill-bar {
+  border-radius: 4px;
+}
+
+.project-card .v-card-text {
+  flex-grow: 1;
+}
+
+.app-footer {
+  border-top: 1px solid rgba(var(--v-theme-text-secondary), 0.12);
+}
+
+.footer-link {
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-link:hover {
+  color: rgb(var(--v-theme-primary)) !important;
+}
+
+.social-link {
+  transition: all 0.2s ease-in-out;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+}
+
+.social-link:hover .social-icon {
+  opacity: 0.7;
+}
+
+.social-link:focus-visible {
+  outline: 2px solid rgb(var(--v-theme-primary));
+  outline-offset: 2px;
+}
+
+.social-icon {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.social-label {
+  color: rgb(var(--v-theme-text-primary));
+  transition: color 0.2s ease-in-out;
+}
+
+.social-link:hover .social-label {
+  color: rgb(var(--v-theme-primary));
+}
+
+.theme-toggle {
+  transition: transform 0.2s ease-in-out;
+}
+
+.theme-toggle:hover {
+  transform: rotate(20deg);
+}
+
+@media (max-width: 960px) {
+  .skills-section,
+  .experience-section,
+  .education-section,
+  .about-section,
+  .projects-section {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .skills-card {
+    margin-bottom: 24px;
+  }
+
+  .skills-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .site-title {
+    font-size: 1rem;
+  }
+
+  .hero-container {
+    padding-top: 80px;
+  }
+
+  .profile-card .v-card-text {
+    padding: 24px !important;
+  }
+
+  .profile-header {
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  .profile-header h1 {
+    font-size: 2rem;
+  }
+
+  .action-buttons {
+    justify-content: center;
+  }
+
+  .about-card {
+    padding: 24px !important;
+  }
+}
+
+@media (min-width: 960px) {
+  .footer-links {
+    justify-content: flex-end;
+  }
+}
+
+@media (max-width: 600px) {
+  .skill-progress-bar {
+    margin-bottom: 16px;
+  }
+
+  .skill-name {
+    font-size: 0.875rem;
+  }
+
+  .action-buttons .v-btn {
+    margin-right: 0 !important;
+  }
+
+  .project-card {
+    margin-bottom: 16px;
+  }
+}

@@ -1,12 +1,12 @@
 <template>
   <section
     id="portfolio"
-    class="projects-section py-12"
+    class="background projects-section py-12"
   >
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">
-        <h2 class="text-h4 font-weight-bold mb-2">
+        <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
         </h2>
         <p v-if="sectionSubtitle" class="text-subtitle-1 text-secondary">
@@ -28,7 +28,7 @@
       </v-row>
 
       <!-- Empty State -->
-      <div v-if="!projects || projects.length === 0" class="empty-state text-center py-8">
+      <div v-if="!projects || projects.length === 0" class="d-flex flex-column align-center justify-center text-center py-8 empty-state">
         <v-icon
           icon="mdi-folder-open-outline"
           size="64"
@@ -70,30 +70,21 @@ const props = defineProps({
 })
 </script>
 
-<style scoped lang="scss">
-.projects-section {
-  background-color: rgb(var(--v-theme-background));
-}
-
+<style>
+/* Custom classes for specific styling */
 .projects-section :deep(.v-container) {
   max-width: 1200px;
 }
 
-.section-header {
-  h2 {
-    color: rgb(var(--v-theme-text-primary));
-  }
+.section-header h2 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
 .empty-state {
   min-height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
-// Responsive adjustments
+/* Responsive adjustments */
 @media (max-width: 960px) {
   .projects-section {
     padding-top: 48px;

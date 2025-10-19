@@ -1,12 +1,12 @@
 <template>
   <section
     id="experience"
-    class="experience-section py-12"
+    class="background-surface experience-section py-12"
   >
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">
-        <h2 class="text-h4 font-weight-bold mb-2">
+        <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
         </h2>
         <p v-if="sectionSubtitle" class="text-subtitle-1 text-secondary">
@@ -15,7 +15,7 @@
       </div>
 
       <!-- Experience Timeline -->
-      <div class="experience-timeline">
+      <div class="section-container">
         <ExperienceCard
           v-for="(exp, index) in experiences"
           :key="index"
@@ -96,27 +96,17 @@ function toggleShowAll() {
 }
 </script>
 
-<style scoped lang="scss">
-.experience-section {
-  background-color: rgb(var(--v-theme-surface));
-}
-
+<style>
+/* Custom classes for specific styling */
 .experience-section :deep(.v-container) {
   max-width: 1200px;
 }
 
-.section-header {
-  h2 {
-    color: rgb(var(--v-theme-text-primary));
-  }
+.section-header h2 {
+  color: rgb(var(--v-theme-text-primary));
 }
 
-.experience-timeline {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-// Responsive adjustments
+/* Responsive adjustments */
 @media (max-width: 960px) {
   .experience-section {
     padding-top: 48px;

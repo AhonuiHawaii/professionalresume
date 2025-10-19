@@ -61,12 +61,13 @@ if (typeof window !== 'undefined') {
 }
 </script>
 
-<style scoped lang="scss">
+<style>
+/* Custom hover effect for theme toggle */
 .theme-toggle {
   transition: transform 0.2s ease-in-out;
+}
 
-  &:hover {
-    transform: rotate(20deg);
-  }
+.theme-toggle:hover {
+  transform: rotate(20deg);
 }
 </style>
