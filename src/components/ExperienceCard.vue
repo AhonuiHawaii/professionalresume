@@ -2,7 +2,7 @@
   <v-card
     elevation="2"
     rounded="lg"
-    class="background card-hover mb-4"
+    class="background-surface card-hover mb-4"
   >
     <v-card-title class="d-flex flex-column flex-sm-row align-start">
       <div class="flex-grow-1">
@@ -38,12 +38,10 @@
     </v-card-subtitle>
 
     <v-card-text>
-      <!-- Summary - Always Visible -->
       <p v-if="experience.summary" class="text-body-2 text-line-height-md mb-3">
         {{ experience.summary }}
       </p>
 
-      <!-- Expandable/Collapsible Responsibilities (Highlights) -->
       <v-expand-transition>
         <div v-show="isExpanded">
           <v-list density="compact" class="list-compact">
@@ -53,11 +51,7 @@
               class="px-0 py-2"
             >
               <template #prepend>
-                <v-icon
-                  icon="mdi-circle-small"
-                  size="small"
-                  color="primary"
-                />
+                <v-icon icon="mdi-circle-small" size="small" color="primary" />
               </template>
               <v-list-item-title class="text-body-2 text-line-height-md text-wrap">
                 {{ responsibility }}
@@ -67,7 +61,6 @@
         </div>
       </v-expand-transition>
 
-      <!-- Expand/Collapse Button -->
       <v-btn
         v-if="collapsible"
         variant="text"
@@ -85,26 +78,10 @@
 <script setup>
 import { ref, computed } from 'vue'
 
-/**
- * ExperienceCard Component
- * Displays individual job experience with role, company, dates, location, and responsibilities
- * Supports collapsible view for better space management
- */
-
 const props = defineProps({
   experience: {
     type: Object,
     required: true,
-    // Expected format from resume.json:
-    // {
-    //   company: 'Amazon',
-    //   role: 'Delivery Station Associate',
-    //   startDate: '2024-08-01',
-    //   endDate: null,
-    //   location: 'Honolulu, HI',
-    //   summary: '...',
-    //   responsibilities: ['...', '...']
-    // }
   },
   collapsible: {
     type: Boolean,
@@ -118,31 +95,21 @@ const props = defineProps({
 
 const isExpanded = ref(props.initiallyExpanded)
 
-// Format dates from JSON (startDate, endDate) to display format
+const formatDate = (dateStr) =>
+  new Date(dateStr).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+
 const formattedDates = computed(() => {
-  const start = props.experience.startDate
-  const end = props.experience.endDate
-
-  if (!start) return ''
-
-  const formatDate = (dateStr) => {
-    const date = new Date(dateStr)
-    return date.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
-  }
-
-  const startFormatted = formatDate(start)
-  const endFormatted = end ? formatDate(end) : 'Present'
-
+  const { startDate, endDate } = props.experience
+  if (!startDate) return ''
+  const startFormatted = formatDate(startDate)
+  const endFormatted = endDate ? formatDate(endDate) : 'Present'
   return `${startFormatted} – ${endFormatted}`
 })
 
-function toggleExpand() {
-  isExpanded.value = !isExpanded.value
-}
+const toggleExpand = () => isExpanded.value = !isExpanded.value
 </script>
 
 <style>
-/* Custom classes for hover effects and specific styling */
 .experience-card:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -172,7 +139,6 @@ function toggleExpand() {
   color: rgb(var(--v-theme-text-primary));
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   .experience-card .v-card-title {
     flex-direction: column;

@@ -50,7 +50,6 @@
             </p>
           </div>
 
-          <!-- Action Buttons -->
           <div class="d-flex flex-wrap ga-3 mb-6 action-buttons">
             <v-btn
               color="secondary"
@@ -59,14 +58,6 @@
               @click="downloadCV"
             >
               Download CV
-            </v-btn>
-            <v-btn
-              color="primary"
-              size="large"
-              prepend-icon="mdi-email"
-              @click="openContact"
-            >
-              Contact
             </v-btn>
           </div>
 
@@ -122,26 +113,13 @@ import { computed } from 'vue'
 import { useDisplay } from 'vuetify'
 import SocialLinks from './SocialLinks.vue'
 
-/**
- * ProfileCard Component
- * Centered card with profile photo, name, title, action buttons, and personal info
- * Main focal point of the hero section
- */
+
 
 const props = defineProps({
   profileData: {
     type: Object,
     required: true,
-    // Expected format:
-    // {
-    //   name: 'Neill Holloman',
-    //   title: 'Coder & Entrepreneur at Amazon',
-    //   photo: '/path/to/photo.jpg',
-    //   address: 'Honolulu, HI',
-    //   email: 'neill@example.com',
-    //   currentJob: 'Delivery Station Associate at Amazon',
-    //   socialLinks: [{ platform: 'LinkedIn', url: '...', icon: '/path/to/icon.svg' }]
-    // }
+
   },
 })
 
@@ -156,14 +134,8 @@ const personalInfo = computed(() => [
   { label: 'Email', value: props.profileData.email, icon: 'mdi-email' },
 ])
 
-function downloadCV() {
-  // TODO: Implement CV download functionality
+const downloadCV = () => {
   console.log('Download CV clicked')
-}
-
-function openContact() {
-  // TODO: Implement contact functionality (scroll to contact section or open email)
-  window.location.href = `mailto:${props.profileData.email}`
 }
 </script>
 

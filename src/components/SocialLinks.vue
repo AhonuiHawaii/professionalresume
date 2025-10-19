@@ -14,7 +14,7 @@
         :alt="`${link.platform} icon`"
         :width="iconSize"
         :height="iconSize"
-        class="social-icon"
+        :class="['social-icon', { 'social-icon-dark': isDark }]"
       />
       <span v-if="showLabels" class="text-body-2 social-label">
         {{ link.platform }}
@@ -24,18 +24,13 @@
 </template>
 
 <script setup>
-/**
- * SocialLinks Component
- * Displays social media icons with links
- * Used in ProfileCard and potentially other sections
- */
+import { computed } from 'vue'
+import { useTheme } from 'vuetify'
 
-const props = defineProps({
+defineProps({
   socialLinks: {
     type: Array,
     required: true,
-    // Expected format:
-    // [{ platform: 'LinkedIn', url: 'https://...', icon: '/path/to/icon.svg' }]
   },
   iconSize: {
     type: [String, Number],
@@ -43,11 +38,11 @@ const props = defineProps({
   },
   iconColor: {
     type: String,
-    default: 'icon-default', // References theme color (no longer used with SVGs)
+    default: 'icon-default',
   },
   layout: {
     type: String,
-    default: 'horizontal', // 'horizontal' or 'vertical'
+    default: 'horizontal',
     validator: (value) => ['horizontal', 'vertical'].includes(value),
   },
   showLabels: {
@@ -55,10 +50,12 @@ const props = defineProps({
     default: false,
   },
 })
+
+const theme = useTheme()
+const isDark = computed(() => theme.global.current.value.dark)
 </script>
 
 <style>
-/* Custom classes for hover effects not available in Vuetify */
 .social-link {
   transition: all 0.2s ease-in-out;
 }
@@ -77,7 +74,11 @@ const props = defineProps({
 }
 
 .social-icon {
-  transition: opacity 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.social-icon-dark {
+  filter: brightness(0) invert(1);
 }
 
 .social-label {
@@ -88,6 +89,4 @@ const props = defineProps({
 .social-link:hover .social-label {
   color: rgb(var(--v-theme-primary));
 }
-
-/* Vertical layout variant - uses flex-column ga-3 Vuetify classes in template when needed */
 </style>

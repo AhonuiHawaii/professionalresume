@@ -2,7 +2,7 @@
   <v-card
     elevation="2"
     rounded="lg"
-    class="background-surface card-hover h-100 d-flex flex-column cursor-pointer"
+    class="background card-hover h-100 d-flex flex-column cursor-pointer"
     :href="project.link"
     :target="project.link ? '_blank' : undefined"
     :rel="project.link ? 'noopener noreferrer' : undefined"

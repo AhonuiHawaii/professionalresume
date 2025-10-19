@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="education"
-    class="background-surface education-section py-12"
-  >
+  <section id="education" class="background education-section py-12">
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">
@@ -21,7 +18,7 @@
           :key="index"
           elevation="2"
           rounded="lg"
-          class="background card-hover mb-4"
+          class="background-surface card-hover mb-4"
         >
           <v-card-title>
             <div class="d-flex align-center">

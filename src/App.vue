@@ -1,13 +1,13 @@
 <template>
   <v-app>
     <v-main>
-      <HelloWorld />
+      <Home />
     </v-main>
-
-    <AppFooter />
+    <ScrollToTop />
   </v-app>
 </template>
 
 <script setup>
-  //
+import Home from './components/Home.vue'
+import ScrollToTop from './components/ScrollToTop.vue'
 </script>

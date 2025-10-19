@@ -1,20 +1,4 @@
-/**
- * plugins/theme.js
- *
- * Vuetify theme configuration for Neill Holloman's resume application
- * Defines color palette, light/dark modes, typography, and custom theme variables
- */
 
-/**
- * Typography Configuration
- * Uses Roboto font family configured in vite.config.mjs
- * Available weights: 100 (thin), 300 (light), 400 (regular), 500 (medium), 700 (bold), 900 (black)
- *
- * Usage in components:
- * - Headings: <h1 class="text-h1">Title</h1>
- * - Body text: <p class="text-body-1">Content</p>
- * - Subtitles: <p class="text-subtitle-1">Subtitle</p>
- */
 export const typography = {
   h1: {
     fontFamily: 'Roboto, sans-serif',

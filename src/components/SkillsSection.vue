@@ -1,10 +1,6 @@
 <template>
-  <section
-    id="skills"
-    class="background-surface skills-section py-12"
-  >
+  <section id="skills" class="background-surface skills-section py-12">
     <v-container>
-      <!-- Section Header -->
       <div class="section-header text-center mb-8">
         <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
@@ -14,13 +10,8 @@
         </p>
       </div>
 
-      <!-- Single Skills Card -->
       <div class="section-container">
-        <v-card
-          elevation="2"
-          rounded="lg"
-          class="background-surface h-100 skills-card pa-6"
-        >
+        <v-card elevation="2" rounded="lg" class="background h-100 skills-card pa-6">
           <v-row>
             <v-col
               v-for="(skill, index) in allSkills"
@@ -48,12 +39,6 @@
 import { computed } from 'vue'
 import SkillProgressBar from './SkillProgressBar.vue'
 
-/**
- * SkillsSection Component
- * Single card layout displaying all skills in a responsive grid
- * Uses SkillProgressBar component for visual skill indicators
- */
-
 const props = defineProps({
   sectionTitle: {
     type: String,
@@ -66,14 +51,10 @@ const props = defineProps({
   technicalSkills: {
     type: Array,
     required: true,
-    // Expected format:
-    // [{ name: 'JavaScript', level: 90, color: 'skillBlue' }]
   },
   softSkills: {
     type: Array,
     required: true,
-    // Expected format:
-    // [{ name: 'Communication', level: 85, color: 'skillGreen' }]
   },
   showPercentages: {
     type: Boolean,
@@ -81,21 +62,14 @@ const props = defineProps({
   },
 })
 
-// Combine all skills into one array
-const allSkills = computed(() => {
-  return [...props.technicalSkills, ...props.softSkills]
-})
+const allSkills = computed(() => [...props.technicalSkills, ...props.softSkills])
 
-// Cycle through theme skill colors for variety
 const skillColors = ['skillBlue', 'skillGreen', 'skillAmber', 'skillPurple', 'skillTeal']
 
-function getSkillColor(index) {
-  return skillColors[index % skillColors.length]
-}
+const getSkillColor = (index) => skillColors[index % skillColors.length]
 </script>
 
 <style>
-/* Custom classes for specific styling */
 .skills-section :deep(.v-container) {
   max-width: 1200px;
 }
@@ -114,7 +88,6 @@ function getSkillColor(index) {
   align-items: center;
 }
 
-/* Responsive adjustments */
 @media (max-width: 960px) {
   .skills-section {
     padding-top: 48px;

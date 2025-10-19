@@ -31,24 +31,7 @@
         </v-col>
 
         <!-- Additional Links -->
-        <v-col
-          cols="12"
-          md="4"
-          class="text-center text-md-right"
-        >
-          <div class="d-flex ga-4 justify-center flex-wrap footer-links">
-            <a
-              v-for="link in footerLinks"
-              :key="link.title"
-              :href="link.href"
-              :target="link.external ? '_blank' : undefined"
-              :rel="link.external ? 'noopener noreferrer' : undefined"
-              class="text-caption text-secondary text-decoration-none footer-link"
-            >
-              {{ link.title }}
-            </a>
-          </div>
-        </v-col>
+
       </v-row>
     </v-container>
   </v-footer>

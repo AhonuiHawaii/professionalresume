@@ -1,10 +1,6 @@
 <template>
-  <section
-    id="experience"
-    class="background-surface experience-section py-12"
-  >
+  <section id="experience" class="background experience-section py-12">
     <v-container>
-      <!-- Section Header -->
       <div class="section-header text-center mb-8">
         <h2 class="card-text-colors text-h4 font-weight-bold mb-2">
           {{ sectionTitle }}
@@ -14,7 +10,6 @@
         </p>
       </div>
 
-      <!-- Experience Timeline -->
       <div class="section-container">
         <ExperienceCard
           v-for="(exp, index) in experiences"
@@ -25,13 +20,8 @@
         />
       </div>
 
-      <!-- Show All/Show Less Toggle -->
       <div v-if="experiences.length > maxVisible && showToggle" class="text-center mt-4">
-        <v-btn
-          variant="outlined"
-          color="primary"
-          @click="toggleShowAll"
-        >
+        <v-btn variant="outlined" color="primary" @click="toggleShowAll">
           {{ showingAll ? 'Show Less' : `Show All ${experiences.length} Experiences` }}
         </v-btn>
       </div>
@@ -42,12 +32,6 @@
 <script setup>
 import { ref, computed } from 'vue'
 import ExperienceCard from './ExperienceCard.vue'
-
-/**
- * ExperienceSection Component
- * Displays work history using ExperienceCard components
- * Supports limiting visible cards and toggling show all/less
- */
 
 const props = defineProps({
   sectionTitle: {
@@ -61,8 +45,6 @@ const props = defineProps({
   experiences: {
     type: Array,
     required: true,
-    // Expected format:
-    // Array of experience objects (see ExperienceCard for format)
   },
   collapsibleCards: {
     type: Boolean,
@@ -70,34 +52,30 @@ const props = defineProps({
   },
   expandedCount: {
     type: Number,
-    default: 3, // Number of cards initially expanded
+    default: 3,
   },
   maxVisible: {
     type: Number,
-    default: 5, // Max visible cards before "Show All" button
+    default: 5,
   },
   showToggle: {
     type: Boolean,
-    default: false, // Set to true to enable Show All/Less toggle
+    default: false,
   },
 })
 
 const showingAll = ref(false)
 
-const visibleExperiences = computed(() => {
-  if (showingAll.value || !props.showToggle) {
-    return props.experiences
-  }
-  return props.experiences.slice(0, props.maxVisible)
-})
+const visibleExperiences = computed(() =>
+  showingAll.value || !props.showToggle
+    ? props.experiences
+    : props.experiences.slice(0, props.maxVisible)
+)
 
-function toggleShowAll() {
-  showingAll.value = !showingAll.value
-}
+const toggleShowAll = () => showingAll.value = !showingAll.value
 </script>
 
 <style>
-/* Custom classes for specific styling */
 .experience-section :deep(.v-container) {
   max-width: 1200px;
 }
@@ -106,7 +84,6 @@ function toggleShowAll() {
   color: rgb(var(--v-theme-text-primary));
 }
 
-/* Responsive adjustments */
 @media (max-width: 960px) {
   .experience-section {
     padding-top: 48px;

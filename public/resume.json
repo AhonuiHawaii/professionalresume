@@ -8,7 +8,7 @@
     "summary": "Disciplined and analytical professional with over 15 years of experience in retail, grocery, logistics, and e-commerce. Known for delivering dependable, high-quality service and maintaining strong attention to detail in fast-paced environments. Recognized for taking initiative to identify problems, improve workflows, and support both customers and coworkers with empathy and reliability. Experienced in handling complex operational tasks while maintaining accuracy, safety, and efficiency. Guided by a simple principle: satisfy and delight. I take pride in creating positive experiences, solving challenges, and upholding standards that reflect integrity and care in every role.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/neill-holloman/",
-      "github": "",
+      "github": "https://github.com/AhonuiHawaii",
       "portfolio": "https://holloman.life"
     }
   },
@@ -255,10 +255,6 @@
     {
       "title": "Shopify Desktop Admin",
       "description": "Created a cross-platform desktop application using Electron and Vue.js to manage Shopify product data. Automated bulk uploads and streamlined variant updates, improving efficiency for e-commerce workflows."
-    },
-    {
-      "title": "UPT Calculator App",
-      "description": "Developed a responsive progressive web app using React and Tailwind CSS to help Amazon associates track UPT accrual, usage, and scheduling. Implemented IndexedDB for offline use and data persistence."
     }
   ],
   "education": [

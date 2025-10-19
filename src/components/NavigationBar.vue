@@ -33,35 +33,7 @@
           </a>
         </div>
 
-        <!-- Theme Toggle -->
         <ThemeToggle />
-
-        <!-- More Options Menu (three dots) -->
-        <v-menu>
-          <template #activator="{ props }">
-            <v-btn
-              icon="mdi-dots-vertical"
-              variant="text"
-              size="small"
-              v-bind="props"
-              aria-label="More options"
-            />
-          </template>
-          <v-list>
-            <v-list-item
-              v-for="option in moreOptions"
-              :key="option.title"
-              :href="option.href"
-              :target="option.external ? '_blank' : undefined"
-              :rel="option.external ? 'noopener noreferrer' : undefined"
-            >
-              <template #prepend>
-                <v-icon :icon="option.icon" />
-              </template>
-              <v-list-item-title>{{ option.title }}</v-list-item-title>
-            </v-list-item>
-          </v-list>
-        </v-menu>
       </div>
     </v-card>
   </div>
@@ -109,13 +81,6 @@ const props = defineProps({
       { id: 'experience', label: 'Experience' },
       { id: 'education', label: 'Education' },
       { id: 'contact', label: 'Contact' },
-    ],
-  },
-  moreOptions: {
-    type: Array,
-    default: () => [
-      { title: 'Download CV', icon: 'mdi-download', href: '#download' },
-      { title: 'Email Me', icon: 'mdi-email', href: 'mailto:neill@example.com' },
     ],
   },
 })

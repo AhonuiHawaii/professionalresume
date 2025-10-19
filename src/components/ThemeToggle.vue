@@ -18,51 +18,40 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
+import { computed, onMounted } from 'vue'
 import { useTheme } from 'vuetify'
-
-/**
- * ThemeToggle Component
- * Toggles between light and dark themes
- * Uses Vuetify's theme composable and Pinia store for persistence
- */
 
 const theme = useTheme()
 
-const themeIcon = computed(() => {
-  return theme.global.name.value === 'dark'
-    ? 'mdi-weather-night'
-    : 'mdi-weather-sunny'
-})
+const currentTheme = computed(() => theme.global.current.value.dark ? 'dark' : 'light')
 
-const tooltipText = computed(() => {
-  return theme.global.name.value === 'dark'
-    ? 'Switch to light mode'
-    : 'Switch to dark mode'
-})
+const themeIcon = computed(() =>
+  currentTheme.value === 'dark' ? 'mdi-weather-night' : 'mdi-weather-sunny'
+)
 
-const iconColor = computed(() => {
-  return theme.global.name.value === 'dark' ? 'white' : 'grey-darken-2'
-})
+const tooltipText = computed(() =>
+  currentTheme.value === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
+)
 
-function toggleTheme() {
-  theme.global.name.value = theme.global.name.value === 'light' ? 'dark' : 'light'
+const iconColor = computed(() =>
+  currentTheme.value === 'dark' ? 'white' : 'grey-darken-2'
+)
 
-  // Persist theme preference to localStorage
-  localStorage.setItem('theme', theme.global.name.value)
+const toggleTheme = () => {
+  const newTheme = currentTheme.value === 'light' ? 'dark' : 'light'
+  theme.global.name.value = newTheme
+  localStorage.setItem('theme', newTheme)
 }
 
-// Initialize theme from localStorage on component mount
-if (typeof window !== 'undefined') {
+onMounted(() => {
   const savedTheme = localStorage.getItem('theme')
   if (savedTheme && (savedTheme === 'light' || savedTheme === 'dark')) {
     theme.global.name.value = savedTheme
   }
-}
+})
 </script>
 
 <style>
-/* Custom hover effect for theme toggle */
 .theme-toggle {
   transition: transform 0.2s ease-in-out;
 }

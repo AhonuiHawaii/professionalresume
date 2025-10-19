@@ -1,8 +1,5 @@
 <template>
-  <section
-    id="portfolio"
-    class="background projects-section py-12"
-  >
+  <section id="portfolio" class="background-surface projects-section py-12">
     <v-container>
       <!-- Section Header -->
       <div class="section-header text-center mb-8">

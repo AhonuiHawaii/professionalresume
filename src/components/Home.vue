@@ -4,7 +4,6 @@
     <NavigationBar
       :site-title="resumeData.base?.name || 'Neill Holloman'"
       :nav-items="navItems"
-      :more-options="moreOptions"
     />
 
     <!-- Hero Section with Profile Card -->
@@ -16,19 +15,19 @@
       <ProfileCard :profile-data="profileData" />
     </HeroSection>
 
+    <!-- About Me Section -->
+    <AboutSection
+      :about-data="aboutData"
+      section-title="About Me"
+      section-subtitle="Background and professional philosophy"
+    />
+
     <!-- Skills Section -->
     <SkillsSection
       :technical-skills="technicalSkills"
       :soft-skills="softSkills"
       section-title="Skills & Expertise"
       section-subtitle="Core competencies and professional capabilities"
-    />
-
-    <!-- About Me Section -->
-    <AboutSection
-      :about-data="aboutData"
-      section-title="About Me"
-      section-subtitle="Background and professional philosophy"
     />
 
     <!-- Experience Section -->
@@ -53,6 +52,12 @@
       section-title="Education"
       section-subtitle="Academic background and qualifications"
     />
+
+    <!-- Footer -->
+    <AppFooter
+      :copyright-name="resumeData.base?.name || 'Neill Holloman'"
+      :social-links="profileData.socialLinks"
+    />
   </div>
 </template>
 
@@ -62,6 +67,7 @@ import NavigationBar from './NavigationBar.vue'
 import HeroSection from './HeroSection.vue'
 import ProfileCard from './ProfileCard.vue'
 import SkillsSection from './SkillsSection.vue'
+import AppFooter from './AppFooter.vue'
 import AboutSection from './AboutSection.vue'
 import ExperienceSection from './ExperienceSection.vue'
 import ProjectsSection from './ProjectsSection.vue'
@@ -82,14 +88,9 @@ const navItems = [
   { id: 'education', label: 'Education' },
 ]
 
-const moreOptions = [
-  { title: 'Download CV', icon: 'mdi-download', href: '#download' },
-  { title: 'Contact Me', icon: 'mdi-email', href: '#contact' },
-]
-
 // Resume data
 const resumeData = ref({})
-const heroBackground = ref(new URL('@/assets/background.png', import.meta.url).href)
+const heroBackground = ref(new URL('@/assets/richard-horvath-background.jpg', import.meta.url).href)
 
 // Computed profile data for ProfileCard
 const profileData = computed(() => {
@@ -102,14 +103,14 @@ const profileData = computed(() => {
   return {
     name: resumeData.value.base?.name,
     title: resumeData.value.base?.title,
-    photo: new URL('@/assets/profileImage.png', import.meta.url).href,
+    photo: new URL('@/assets/profileImage.jpg', import.meta.url).href,
     address: resumeData.value.base?.address,
     email: resumeData.value.base?.email,
     currentJob,
     socialLinks: [
       { platform: 'LinkedIn', url: resumeData.value.base?.social?.linkedin, icon: new URL('@/assets/linkedin.svg', import.meta.url).href },
       { platform: 'GitHub', url: resumeData.value.base?.social?.github, icon: new URL('@/assets/github.svg', import.meta.url).href },
-      { platform: 'Portfolio', url: resumeData.value.base?.social?.portfolio, icon: new URL('@/assets/folder-open.svg', import.meta.url).href },
+//      { platform: 'Portfolio', url: resumeData.value.base?.social?.portfolio, icon: new URL('@/assets/portfolio.svg', import.meta.url).href },
     ],
   }
 })

@@ -17,13 +17,7 @@
 </template>
 
 <script setup>
-/**
- * SkillProgressBar Component
- * Displays a skill name with a visual progress bar indicator
- * Used in SkillsSection for both technical and soft skills
- */
-
-const props = defineProps({
+defineProps({
   skillName: {
     type: String,
     required: true,
@@ -39,7 +33,7 @@ const props = defineProps({
   },
   barColor: {
     type: String,
-    default: 'skillBlue', // References theme colors: skillBlue, skillGreen, skillAmber, etc.
+    default: 'skillBlue',
   },
   height: {
     type: [String, Number],
@@ -53,7 +47,6 @@ const props = defineProps({
 </script>
 
 <style>
-/* Custom classes for specific styling */
 .skill-progress-bar:last-child {
   margin-bottom: 0;
 }
@@ -71,7 +64,6 @@ const props = defineProps({
   border-radius: 4px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   .skill-name {
     font-size: 0.875rem;
