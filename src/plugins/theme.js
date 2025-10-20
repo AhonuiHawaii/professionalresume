@@ -96,7 +96,7 @@ export const typography = {
 }
 
 export const themeConfig = {
-  defaultTheme: 'light',
+  defaultTheme: 'dark',
 
   themes: {
     light: {
