@@ -39,11 +39,10 @@
             </div>
           </v-card-title>
 
-          <v-card-text v-if="edu.dates || edu.gpa || edu.notes">
-            <!-- Dates and GPA -->
-            <div v-if="edu.dates || edu.gpa" class="d-flex flex-wrap ga-2 mb-2">
+          <v-card-text>
+            <!-- Dates -->
+            <div v-if="edu.startDate || edu.endDate" class="mb-3">
               <v-chip
-                v-if="edu.dates"
                 size="small"
                 variant="tonal"
                 color="primary"
@@ -53,41 +52,14 @@
                   size="x-small"
                   start
                 />
-                {{ edu.dates }}
-              </v-chip>
-              <v-chip
-                v-if="edu.gpa"
-                size="small"
-                variant="tonal"
-                color="secondary"
-              >
-                <v-icon
-                  icon="mdi-star"
-                  size="x-small"
-                  start
-                />
-                GPA: {{ edu.gpa }}
+                {{ formatDateRange(edu.startDate, edu.endDate) }}
               </v-chip>
             </div>
 
             <!-- Notes/Description -->
-            <p v-if="edu.notes" class="text-body-2 text-line-height-md mb-0">
+            <p v-if="edu.notes" class="text-body-2 text-line-height-md mb-0 card-text-colors">
               {{ edu.notes }}
             </p>
-
-            <!-- Coursework List (if provided) -->
-            <div v-if="edu.coursework && edu.coursework.length" class="d-flex flex-wrap mt-3">
-              <p class="text-caption text-secondary mb-2">Relevant Coursework:</p>
-              <v-chip
-                v-for="course in edu.coursework"
-                :key="course"
-                size="small"
-                variant="outlined"
-                class="mr-2 mb-2"
-              >
-                {{ course }}
-              </v-chip>
-            </div>
           </v-card-text>
         </v-card>
       </div>
@@ -112,8 +84,28 @@
 /**
  * EducationSection Component
  * Displays educational background with schools, programs, dates, and notes
- * Supports optional coursework listing
  */
+
+/**
+ * Format date range from ISO dates
+ */
+const formatDateRange = (startDate, endDate) => {
+  if (!startDate && !endDate) return ''
+
+  const formatYear = (dateString) => {
+    if (!dateString) return ''
+    // Extract year directly from ISO string to avoid timezone issues
+    return dateString.split('-')[0]
+  }
+
+  const start = formatYear(startDate)
+  const end = formatYear(endDate)
+
+  if (start && end) {
+    return start === end ? start : `${start} - ${end}`
+  }
+  return start || end
+}
 
 const props = defineProps({
   sectionTitle: {
@@ -129,12 +121,11 @@ const props = defineProps({
     required: true,
     // Expected format:
     // [{
-    //   school: 'Community College of Hawaii',
-    //   program: 'Information Technology Coursework',
-    //   dates: '2018 - 2020', (optional)
-    //   gpa: '3.8', (optional)
-    //   notes: 'Completed coursework in...',
-    //   coursework: ['Web Development', 'Database Systems'] (optional)
+    //   school: 'Azalea Garden Christian School',
+    //   program: 'High School Coursework',
+    //   startDate: '1995-01-01',
+    //   endDate: '1996-12-31',
+    //   notes: 'Completed two years of high school coursework...'
     // }]
   },
 })

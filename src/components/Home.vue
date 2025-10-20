@@ -171,7 +171,7 @@ const aboutData = computed(() => ({
 // Fetch resume data on mount
 onMounted(async () => {
   try {
-    const response = await fetch('/resume.json')
+    const response = await fetch(`${import.meta.env.BASE_URL}resume.json`)
     if (response.ok) {
       resumeData.value = await response.json()
     } else {
