@@ -20,42 +20,41 @@
           rounded="lg"
           class="background-surface card-hover mb-4"
         >
-          <v-card-title>
-            <div class="d-flex align-center">
-              <v-icon
-                icon="mdi-school"
-                size="large"
-                color="primary"
-                class="mr-3"
-              />
-              <div>
-                <h4 class="card-text-colors text-h6 font-weight-medium">
-                  {{ edu.school }}
-                </h4>
-                <p class="text-subtitle-2 text-secondary mb-0">
-                  {{ edu.program }}
-                </p>
-              </div>
+          <v-card-title class="d-flex flex-column flex-sm-row align-start">
+            <div class="flex-grow-1">
+              <h4 class="card-text-colors text-h6 font-weight-medium mb-1">
+                {{ edu.program }}
+              </h4>
+              <p class="text-subtitle-2 text-secondary mb-0">
+                <v-icon
+                  icon="mdi-school"
+                  size="small"
+                  class="mr-1"
+                />
+                {{ edu.school }}
+              </p>
             </div>
+            <v-chip
+              v-if="edu.startDate || edu.endDate"
+              size="small"
+              color="primary"
+              variant="tonal"
+              class="ml-sm-2 mt-2 mt-sm-0"
+            >
+              {{ formatDateRange(edu.startDate, edu.endDate) }}
+            </v-chip>
           </v-card-title>
 
-          <v-card-text>
-            <!-- Dates -->
-            <div v-if="edu.startDate || edu.endDate" class="mb-3">
-              <v-chip
-                size="small"
-                variant="tonal"
-                color="primary"
-              >
-                <v-icon
-                  icon="mdi-calendar"
-                  size="x-small"
-                  start
-                />
-                {{ formatDateRange(edu.startDate, edu.endDate) }}
-              </v-chip>
-            </div>
+          <v-card-subtitle v-if="edu.location" class="pb-0">
+            <v-icon
+              icon="mdi-map-marker"
+              size="small"
+              class="mr-1"
+            />
+            {{ edu.location }}
+          </v-card-subtitle>
 
+          <v-card-text>
             <!-- Notes/Description -->
             <p v-if="edu.notes" class="text-body-2 text-line-height-md mb-0 card-text-colors">
               {{ edu.notes }}
