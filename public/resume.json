@@ -140,25 +140,27 @@
           ]
         },
         {
-          "company": "Whole Foods Market",
-          "role": "Store Scanning Specialist",
-          "startDate": "2018-05-01",
-          "endDate": "2021-01-01",
-          "location": "Honolulu, HI",
-          "summary": "Maintained pricing integrity and labeling accuracy across all departments while supporting store operations and compliance. Collaborated with regional and corporate data teams to resolve scanning discrepancies and ensure alignment with Whole Foods Market standards. Promoted into this position after demonstrating reliability and attention to detail as a Grocery Team Member.",
-          "responsibilities": [
-            "Audited tags, signage, and shelf pricing across all departments to ensure accuracy and compliance with Weights and Measures standards.",
-            "Printed and distributed new shelf tags and maintained tag strips for upcoming price changes.",
-            "Supported Sales Changeovers by coordinating with store leadership and verifying updated pricing prior to active dates.",
-            "Completed audit reports noting discrepancies, corrective actions, and follow-up results to maintain pricing consistency.",
-            "Worked with regional data teams to troubleshoot scanning issues and resolve pricing conflicts efficiently.",
-            "Assisted in maintaining tare weights, signage compliance, and Country of Origin labeling accuracy.",
-            "Helped the Frozen Department’s bread buyer reduce product shrink from dozens of lost items to nearly zero by analyzing sales data and adjusting order patterns.",
-            "Supported Weights and Measures inspections, collected feedback, and implemented corrective actions.",
-            "Trained backup staff and cross-supported grocery operations during high-volume periods.",
-            "Maintained a professional, organized, and customer-focused presence while upholding Whole Foods Market’s service and safety standards."
-          ]
-        },
+            "company": "Whole Foods Market",
+            "role": "Store Scanning Specialist",
+            "startDate": "2018-05-01",
+            "endDate": "2021-01-01",
+            "location": "Honolulu, HI",
+            "summary": "Maintained pricing integrity, signage accuracy, and scale compliance across departments while serving as a point of contact between store operations and corporate support teams. Provided technical troubleshooting, audit accuracy, and data integrity that improved store efficiency and compliance. Promoted into this position after demonstrating reliability and detail focus as a Grocery Team Member.",
+            "responsibilities": [
+              "Used ServiceNow for ticketing and issue tracking to troubleshoot scanning systems, printers, and store hardware.",
+              "Performed BIZERBA scale resets, managed PLU data, and ensured accurate price synchronization across systems.",
+              "Operated Zebra and Honeywell handheld scanners for inventory and pricing audits.",
+              "Audited tags, signage, and shelf pricing to ensure compliance with company and Weights & Measures standards.",
+              "Printed and distributed shelf tags and maintained tag strips for upcoming price changes.",
+              "Worked with regional and corporate IT teams to identify and resolve label and system errors.",
+              "Helped the Frozen Department’s bread buyer reduce product shrink from dozens of lost items to nearly zero by analyzing sales data and correcting order patterns.",
+              "Completed audit reports, tracked discrepancies, and followed up with leadership for correction.",
+              "Supported Weights & Measures inspections, collected feedback, and implemented corrective actions.",
+              "Trained replacement staff before transitioning roles to ensure continuity of operations.",
+              "Provided technical assistance to team members for scanners, label printers, and office systems.",
+              "Maintained professional communication and upheld Whole Foods Market’s core standards for accuracy, service, and food safety."
+            ]
+          },
         {
           "company": "Whole Foods Market",
           "role": "Grocery Team Member (Bulk, Dairy & Frozen)",
