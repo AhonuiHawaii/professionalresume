@@ -268,6 +268,8 @@
   {
     "school": "Tidewater Community College",
     "program": "A+ Certification Coursework",
+    "startDate": "2001-01-01",
+    "endDate": "20001-01-01",
     "notes": "Completed coursework in computer systems, troubleshooting, and data organization with a focus on applying technology to real-world workplace processes."
   }
 ]
