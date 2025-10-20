@@ -182,20 +182,25 @@
             "Achieved a 99% Secret Shopper satisfaction score for service quality and attention to detail."
           ]
         },
-        {
-          "company": "Tamura Super Market",
-          "role": "Stock Clerk",
-          "startDate": "2008-11-01",
-          "endDate": "2012-09-01",
-          "location": "Waianae, HI",
-          "summary": "Managed daily restocking and rotation for dairy and frozen departments. Ensured freshness, correct pricing, and department readiness while leading small teams to maintain workflow and product organization.",
-          "responsibilities": [
-            "Maintained stock rotation and quality in dairy and frozen sections.",
-            "Received and unloaded weekly dairy shipments exceeding 250 crates.",
-            "Verified pricing and labeling accuracy for perishable goods.",
-            "Led 2–3 associates in completing stocking and organization tasks efficiently."
-          ]
-        },
+{
+  "company": "Tamura Super Market",
+  "role": "Stock Clerk – Dairy & Frozen Departments",
+  "startDate": "2008-11-01",
+  "endDate": "2012-06-01",
+  "location": "Waianae, HI",
+  "summary": "Advanced from Courtesy Clerk to Stock Clerk supporting both Dairy and Frozen departments. Maintained accurate rotation, stock levels, and cleanliness while assisting customers and training new associates. Recognized for adaptability, strong work ethic, and reliability—earning the nickname “Superman” for consistently high performance and teamwork.",
+  "responsibilities": [
+    "Started as Courtesy Clerk assisting customers, bagging groceries, and maintaining front-end cleanliness before advancing into backroom operations.",
+    "Stocked and rotated milk, dairy, and frozen products while ensuring freshness and accurate labeling.",
+    "Balanced responsibilities across both departments to meet daily stocking goals and reduce product loss.",
+    "Trained and guided new clerks on rotation, organization, and safety practices.",
+    "Monitored temperatures and shelf life to maintain food safety standards and compliance.",
+    "Maintained department cleanliness through regular mopping, sweeping, and equipment care.",
+    "Provided courteous assistance to customers and supported store-wide teamwork during busy hours.",
+    "Earned recognition for dependability, flexibility, and initiative across multiple departments."
+  ]
+}
+,
         {
           "company": "McDonald’s",
           "role": "Crew Member",
