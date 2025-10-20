@@ -257,11 +257,19 @@
       "description": "Created a cross-platform desktop application using Electron and Vue.js to manage Shopify product data. Automated bulk uploads and streamlined variant updates, improving efficiency for e-commerce workflows."
     }
   ],
-  "education": [
-    {
-      "school": "Community College of Hawaii",
-      "program": "Information Technology Coursework",
-      "notes": "Completed coursework in computer systems, troubleshooting, and data organization with a focus on applying technology to real-world workplace processes."
-    }
-  ]
+"education": [
+  {
+    "school": "Azalea Garden Christian School / State of Virginia",
+    "program": "High School Coursework and GED",
+    "startDate": "1995-01-01",
+    "endDate": "1998-01-01",
+    "notes": "Completed two years of coursework at Azalea Garden Christian School before earning GED certification through the State of Virginia in 1998."
+  },
+  {
+    "school": "Tidewater Community College",
+    "program": "A+ Certification Coursework",
+    "notes": "Completed coursework in computer systems, troubleshooting, and data organization with a focus on applying technology to real-world workplace processes."
+  }
+]
+
 }
