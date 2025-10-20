@@ -95,8 +95,16 @@ const props = defineProps({
 
 const isExpanded = ref(props.initiallyExpanded)
 
-const formatDate = (dateStr) =>
-  new Date(dateStr).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+const formatDate = (dateStr) => {
+  // Parse date in HST timezone to ensure accurate display
+  const [year, month] = dateStr.split('-')
+  const date = new Date(year, month - 1) // month is 0-indexed
+  return date.toLocaleDateString('en-US', {
+    month: 'long',
+    year: 'numeric',
+    timeZone: 'Pacific/Honolulu'
+  })
+}
 
 const formattedDates = computed(() => {
   const { startDate, endDate } = props.experience
