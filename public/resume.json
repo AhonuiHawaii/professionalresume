@@ -1,11 +1,11 @@
 {
   "base": {
     "name": "Neill Holloman",
-    "title": "Customer Service Professional",
+    "title": "Retail & Customer Service Professional",
     "address": "Honolulu, HI 96817",
     "email": "neill@holloman.life",
     "photo": "profileImage.jpg",
-    "summary": "Dependable and detail-oriented customer service professional with over 15 years of experience spanning retail, grocery, and logistics. Recognized for improving processes, maintaining safety standards, and creating positive experiences for customers and coworkers alike. Skilled in pricing accuracy, inventory control, and workflow organization, with a proven record of reliability, teamwork, and accountability. Known for identifying issues before they escalate, maintaining focus in fast-paced environments, and contributing to a culture of safety and continuous improvement.",
+    "summary": "Dependable and detail-oriented professional with over 15 years of experience in retail, grocery, and logistics. Known for building team morale, maintaining operational accuracy, and creating efficient, safe work environments. Experienced in leading by example, mentoring new associates, and supporting management through process improvement and workflow coordination. Passionate about growing into a retail supervisory role where consistent service, organization, and accountability drive team success.",
     "social": {
       "linkedin": "https://www.linkedin.com/in/neill-holloman-70a5b030/",
       "github": "https://github.com/AhonuiHawaii",
@@ -239,24 +239,24 @@
     }
   },
   "skills": [
-    { "name": "Customer Service Excellence", "level": "Expert", "value": 5 },
-    { "name": "Team Collaboration & Support", "level": "Expert", "value": 5 },
+    { "name": "Customer Service & Experience Management", "level": "Expert", "value": 5 },
+    { "name": "Team Leadership & Collaboration", "level": "Expert", "value": 5 },
     { "name": "Dependability & Accountability", "level": "Expert", "value": 5 },
     { "name": "Verbal & Written Communication", "level": "Expert", "value": 5 },
-    { "name": "Workplace Safety Leadership", "level": "Advanced", "value": 4 },
-    { "name": "Process Accuracy & Compliance", "level": "Advanced", "value": 4 },
-    { "name": "Quality & Detail Control", "level": "Advanced", "value": 4 },
-    { "name": "Time & Task Management", "level": "Advanced", "value": 4 },
-    { "name": "Organizational Efficiency", "level": "Advanced", "value": 4 },
-    { "name": "Adaptability in Fast-Paced Environments", "level": "Advanced", "value": 4 },
+    { "name": "Workplace Safety & Compliance", "level": "Advanced", "value": 4 },
+    { "name": "Process Accuracy & Quality Control", "level": "Advanced", "value": 4 },
     { "name": "Inventory & Stock Management", "level": "Advanced", "value": 4 },
-    { "name": "Pricing Accuracy & Label Integrity", "level": "Advanced", "value": 4 },
-    { "name": "POS & Scanning Systems Operation", "level": "Advanced", "value": 4 },
-    { "name": "Process Improvement & Workflow Optimization", "level": "Advanced", "value": 4 },
-    { "name": "Problem Solving & Root-Cause Analysis", "level": "Intermediate", "value": 3 },
-    { "name": "Training & Peer Support", "level": "Intermediate", "value": 3 },
+    { "name": "Pricing Accuracy & Visual Merchandising", "level": "Advanced", "value": 4 },
+    { "name": "Training & Staff Support", "level": "Advanced", "value": 4 },
+    { "name": "Process Improvement & Workflow Coordination", "level": "Advanced", "value": 4 },
+    { "name": "Time & Task Management", "level": "Advanced", "value": 4 },
+    { "name": "Adaptability in Fast-Paced Environments", "level": "Advanced", "value": 4 },
+    { "name": "Problem Solving & Decision-Making", "level": "Advanced", "value": 4 },
+    { "name": "Safety Auditing & Risk Identification", "level": "Advanced", "value": 4 },
+    { "name": "Organizational Efficiency", "level": "Advanced", "value": 4 },
+    { "name": "Employee Engagement & Motivation", "level": "Intermediate", "value": 3 },
     { "name": "Data Entry & Reporting Accuracy", "level": "Intermediate", "value": 3 },
-    { "name": "Safety Auditing & Risk Identification", "level": "Advanced", "value": 4 }
+    { "name": "Conflict Resolution", "level": "Intermediate", "value": 3 }
   ],
   "projects": [
     {
