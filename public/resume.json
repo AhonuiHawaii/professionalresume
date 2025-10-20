@@ -250,24 +250,26 @@
       ]
     }
   },
-  "skills": [
-    { "name": "Customer Service", "level": "Expert", "value": 5 },
-    { "name": "Customer Engagement", "level": "Expert", "value": 5 },
-    { "name": "Sales Techniques", "level": "Advanced", "value": 4 },
-    { "name": "Product Knowledge", "level": "Advanced", "value": 4 },
-    { "name": "Teamwork", "level": "Expert", "value": 5 },
-    { "name": "Safety Awareness", "level": "Advanced", "value": 4 },
-    { "name": "Associate Safety Committee (6 months)", "level": "Advanced", "value": 4 },
-    { "name": "Time Management", "level": "Advanced", "value": 4 },
-    { "name": "Organization", "level": "Advanced", "value": 4 },
-    { "name": "Dependability", "level": "Expert", "value": 5 },
-    { "name": "Attention to Detail", "level": "Advanced", "value": 4 },
-    { "name": "Process Accuracy", "level": "Advanced", "value": 4 },
-    { "name": "Communication", "level": "Expert", "value": 5 },
-    { "name": "Adaptability", "level": "Advanced", "value": 4 },
-    { "name": "Problem Solving", "level": "Intermediate", "value": 3 },
-    { "name": "Training Support", "level": "Intermediate", "value": 3 }
-  ],
+"skills": [
+  { "name": "Customer Service Excellence", "level": "Expert", "value": 5 },
+  { "name": "Team Collaboration & Support", "level": "Expert", "value": 5 },
+  { "name": "Dependability & Accountability", "level": "Expert", "value": 5 },
+  { "name": "Verbal & Written Communication", "level": "Expert", "value": 5 },
+  { "name": "Workplace Safety Leadership", "level": "Advanced", "value": 4 },
+  { "name": "Process Accuracy & Compliance", "level": "Advanced", "value": 4 },
+  { "name": "Quality & Detail Control", "level": "Advanced", "value": 4 },
+  { "name": "Time & Task Management", "level": "Advanced", "value": 4 },
+  { "name": "Organizational Efficiency", "level": "Advanced", "value": 4 },
+  { "name": "Adaptability in Fast-Paced Environments", "level": "Advanced", "value": 4 },
+  { "name": "Inventory & Stock Management", "level": "Advanced", "value": 4 },
+  { "name": "Pricing Accuracy & Label Integrity", "level": "Advanced", "value": 4 },
+  { "name": "POS & Scanning Systems Operation", "level": "Advanced", "value": 4 },
+  { "name": "Process Improvement & Workflow Optimization", "level": "Advanced", "value": 4 },
+  { "name": "Problem Solving & Root-Cause Analysis", "level": "Intermediate", "value": 3 },
+  { "name": "Training & Peer Support", "level": "Intermediate", "value": 3 },
+  { "name": "Data Entry & Reporting Accuracy", "level": "Intermediate", "value": 3 },
+  { "name": "Safety Auditing & Risk Identification", "level": "Advanced", "value": 4 }
+],
   "projects": [
     {
       "title": "Shopify Desktop Admin",
