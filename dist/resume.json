@@ -206,20 +206,24 @@
             "Maintained a clear and safe parking area for customer access."
           ]
         },
-        {
-          "company": "Down to Earth All Vegetarian Organic & Natural",
-          "role": "Grocery Clerk",
-          "startDate": "2012-11-01",
-          "endDate": "2013-07-01",
-          "location": "Kapolei, HI",
-          "summary": "Maintained product freshness, stock accuracy, and customer satisfaction in a natural foods retail environment.",
-          "responsibilities": [
-            "Received and organized daily shipments, checking invoice accuracy.",
-            "Achieved a 99% Secret Shopper satisfaction score for service quality.",
-            "Assisted customers with product recommendations and information.",
-            "Operated pallet jacks safely and kept stockroom organized."
-          ]
-        },
+{
+  "company": "Down to Earth All Vegetarian Organic & Natural",
+  "role": "Grocery Clerk",
+  "startDate": "2012-11-01",
+  "endDate": "2013-07-01",
+  "location": "Kapolei, HI",
+  "summary": "Supported daily grocery operations across chill, frozen, and bulk departments while maintaining accuracy, freshness, and customer satisfaction. Known for dependability, positive communication, and attention to detail in a team-oriented natural foods environment.",
+  "responsibilities": [
+    "Received and verified deliveries with precision, checking invoices and product condition for accuracy.",
+    "Stocked grocery, chill, frozen, and bulk sections efficiently while maintaining a clean, organized workspace.",
+    "Demonstrated accuracy and thoroughness when handling natural and organic products.",
+    "Solved day-to-day challenges in a professional, friendly, and helpful manner to support customers and coworkers.",
+    "Assisted customers with product recommendations, dietary inquiries, and store navigation.",
+    "Communicated clearly with team members to coordinate restocking and maintain department readiness.",
+    "Used basic computer applications, including Microsoft programs, for inventory and store communication tasks.",
+    "Achieved a 99% Secret Shopper satisfaction score for service quality and accuracy."
+  ]
+},
         {
           "company": "Tamura Super Market",
           "role": "Stock Clerk",
